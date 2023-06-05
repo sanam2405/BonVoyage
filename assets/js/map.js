@@ -29,7 +29,8 @@ function initMap() {
     // Create a new map instance
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: centreLat, lng: centreLong}, // Set the initial map center
-        zoom: 18.25 // Set the initial zoom level
+        zoom: 18.25,// Set the initial zoom level
+        disableDefaultUI:true,
     });
 }
 
