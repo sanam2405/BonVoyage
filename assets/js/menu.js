@@ -137,6 +137,20 @@ function toggleDropdown() {
   }
 }
 
+//hiding the dropdown list after clicking one of the buttons ".avatar" or ".go" button
+
+function hideDropdown() {
+  var dropdown = document.querySelector(".dropdown");
+  if(dropdown != null){
+    dropdown.style.display = "none";
+  }
+}
+
+let avatarButton = document.querySelector(".avatar")
+avatarButton.addEventListener("click",hideDropdown)
+let goButton = document.querySelector(".go")
+goButton.addEventListener("click",hideDropdown)
+
 window.onload = function () {
   var button = document.querySelector('.menu');
   button.click();
