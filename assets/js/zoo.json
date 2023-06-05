@@ -10,8 +10,8 @@
             "gender": "male"
         },
         "location": {
-            "latitude": 22.5356327,
-            "longitude": 88.3321392,
+            "latitude": 22.535464,
+            "longitude": 88.332762,
             "iconType": "zebra"
         }
     },
@@ -26,8 +26,8 @@
             "gender": "female"
         },
         "location": {
-            "latitude": 22.5348104,
-            "longitude": 88.3317858,
+            "latitude": 22.534778,
+            "longitude": 88.332742,
             "iconType": "bear"
         }
     },
@@ -42,8 +42,8 @@
             "gender": "male"
         },
         "location": {
-            "latitude": 22.5339503,
-            "longitude": 88.331242,
+            "latitude": 22.534272,
+            "longitude": 88.331402,
             "iconType": "deer"
         }
     },
@@ -58,8 +58,8 @@
             "gender": "male"
         },
         "location": {
-            "latitude": 22.5374752,
-            "longitude": 88.3309464,
+            "latitude":  22.537222,
+            "longitude": 88.331215,
             "iconType": "leopard"
         }
     },
@@ -74,8 +74,8 @@
             "gender": "female"
         },
         "location": {
-            "latitude": 22.5386429,
-            "longitude": 88.330406,
+            "latitude":  22.537157,
+            "longitude": 88.33254,
             "iconType": "tiger"
         }
     },
@@ -90,8 +90,8 @@
             "gender": "male"
         },
         "location": {
-            "latitude": 22.5386523,
-            "longitude": 88.3314018,
+            "latitude": 22.538995,
+            "longitude": 88.332555,
             "iconType": "lion"
         }
     },
@@ -106,8 +106,8 @@
             "gender": "male"
         },
         "location": {
-            "latitude": 22.5354381,
-            "longitude": 88.3319523,
+            "latitude": 22.535804,
+            "longitude": 88.332388,
             "iconType": "chimpanzee"
         }
     },
@@ -122,8 +122,8 @@
             "gender": "female"
         },
         "location": {
-            "latitude": 22.5375726,
-            "longitude": 88.3313916,
+            "latitude": 22.538161,
+            "longitude": 88.332239,
             "iconType": "giraffe"
         }
     },
@@ -134,8 +134,8 @@
             "name": "Canara Bank ATM"
         },
         "location": {
-            "latitude": 22.5335832,
-            "longitude": 88.3312357,
+            "latitude": 22.533224,
+            "longitude": 88.331067,
             "iconType": "bank"
         }
     },
@@ -146,8 +146,8 @@
             "name": "ICICI Bank ATM"
         },
         "location": {
-            "latitude": 22.5333797,
-            "longitude": 88.3313825,
+            "latitude":  22.533168,
+            "longitude": 88.329465,
             "iconType": "bank"
         }
     },
@@ -160,8 +160,8 @@
             "female": true
         },
         "location": {
-            "latitude": 22.5398761,
-            "longitude": 88.3308777,
+            "latitude": 22.540415,
+            "longitude": 88.330552,
             "iconType": "toilet"
         }
     },
@@ -174,8 +174,8 @@
             "female": true
         },
         "location": {
-            "latitude": 22.5376418,
-            "longitude": 88.3326018,
+            "latitude": 22.533215,
+            "longitude":88.330867,
             "iconType": "toilet"
         }
     },
@@ -188,8 +188,8 @@
             "female": true
         },
         "location": {
-            "latitude": 22.5371636,
-            "longitude": 88.332718,
+            "latitude":  22.53707,
+            "longitude": 88.333277,
             "iconType": "toilet"
         }
     },
@@ -202,8 +202,8 @@
             "female": false
         },
         "location": {
-            "Latitude": 22.533041,
-            "longitude": 88.3310865,
+            "latitude": 22.537078,
+            "longitude": 88.33336,
             "iconType": "toilet"
         }
     },
@@ -214,8 +214,8 @@
             "name": "Ticket Counter"
         },
         "location": {
-            "latitude": 22.536388,
-            "longitude": 88.3326866,
+            "latitude":  22.53609,
+            "longitude": 88.333265,
             "iconType": "admin"
         }
     },
@@ -226,8 +226,8 @@
             "name": "Nature Information Centre"
         },
         "location": {
-            "latitude": 22.5379268,
-            "longitude": 88.3309631,
+            "latitude":  22.537782,
+            "longitude": 88.330746,
             "iconType": "admin"
         }
     },
@@ -238,8 +238,8 @@
             "name": "Senapati Bhavan"
         },
         "location": {
-            "latitude": 22.5333772,
-            "longitude": 88.3310992,
+            "latitude": 22.533248,
+            "longitude": 88.330732,
             "iconType": "admin"
         }
     },
@@ -251,8 +251,8 @@
             "vegetarian": false
         },
         "location": {
-            "latitude": 22.5358525,
-            "longitude": 88.3323482,
+            "latitude": 22.535803,
+            "longitude": 88.332496,
             "iconType": "food"
         }
     },
@@ -264,8 +264,8 @@
             "vegetarian": true
         },
         "location": {
-            "latitude": 22.5361946,
-            "longitude": 88.3326626,
+            "latitude": 22.536406,
+            "longitude": 88.333156,
             "iconType": "food"
         }
     }
