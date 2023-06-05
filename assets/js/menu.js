@@ -79,7 +79,8 @@ function createHTML() {
           const location = locationMap.get(subItem);
           if (location) {
             const { latitude, longitude } = location;
-            window.addMarker(latitude, longitude, subItem);
+            map.panTo({ lat: latitude, lng: longitude }); // Change the center of the map dynamically
+            window.addMarker(latitude, longitude, subItem); 
             console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
           } else {
             console.log(`Location not found for name: ${name}`);
