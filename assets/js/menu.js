@@ -40,7 +40,13 @@ fetch('./assets/js/zoo.json')
 
 // console.log(menuItems);
 
-
+// function to render differently 
+function shiftMarker() {
+  if(window.innerHeight > window.innerWidth)
+    return 0.357*window.innerHeight;
+  else
+    return 0.252*window.innerHeight;
+}
 
 //------------------------------------------------
 
@@ -79,7 +85,10 @@ function createHTML() {
           const location = locationMap.get(subItem);
           if (location) {
             const { latitude, longitude } = location;
-            map.panTo({ lat: latitude, lng: longitude }); // Change the center of the map dynamically
+            // Change the center of the map dynamically
+            map.panTo({ lat: latitude, lng: longitude }); 
+            map.panBy(0,-shiftMarker());
+            // Show the marker
             window.addMarker(latitude, longitude, subItem); 
             console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
           } else {
