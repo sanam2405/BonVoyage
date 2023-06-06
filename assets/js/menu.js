@@ -155,3 +155,15 @@ window.onload = function () {
   var button = document.querySelector('.menu');
   button.click();
 };
+
+//show go button only when a item in "sub-dropdown" has been clicked
+
+const container = document.getElementById('container');
+  const goBtn = document.querySelector('.go');
+
+  container.addEventListener('click', (event) => {
+    const clickedElement = event.target;
+    if (clickedElement.classList.contains('sub-dropdown-item')) {
+      goBtn.style.display = 'block';
+    }
+  });
