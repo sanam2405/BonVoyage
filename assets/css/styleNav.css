@@ -256,7 +256,7 @@
     text-align: center;
     font-family: var(--font-comic-neue);
   }
-
+/* placard style */
   .placard {
     display: none;
     position: absolute;
@@ -264,10 +264,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    background-color: rgba(237, 120, 106, 0.8);
+    background-color: rgba(237, 120, 106, 0.5); /* Adjust the opacity as needed */
     border-radius: 5px;
     z-index: 2;
-    }
+    height: 300px;
+    width: 400px;
+    font-family: var(--font-comic-neue);
+  }
+  
+  .placard .content {
+    /* background-color: rgba(255, 255, 255, 1); Opaque background for the content */
+    border-radius: 5px;
+    padding: 10px;
+  }
     
     .button-group {
       display: flex;
@@ -282,8 +291,8 @@
       color: #ed786a;
       border: none;
       border-radius: 50%;
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -294,8 +303,8 @@
     }
     
     .picture {
-      width: 100px;
-      height: 100px;
+      width: 125px;
+      height: 125px;
       background-color: #ddd; /* Placeholder background color */
       margin-right: 10px;
     }
@@ -303,14 +312,18 @@
     .info {
       flex-grow: 1;
     }
-    
-  }
 
-  #placard-name{
-    padding: 0;
+  #exitBtn {
+    background-color: #ff5c5c;
   }
   
+  #dummyBtn {
+    background-color: yellow;
+  }
   
+  #maximizeBtn {
+    background-color: green;
+  }
   /* Footer styles */
   .footer {
     display: flex;
