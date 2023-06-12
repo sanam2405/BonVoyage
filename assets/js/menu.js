@@ -124,6 +124,8 @@ function showSubItemDetails(subItem) {
 var createButton = document.querySelector('.menu');
 createButton.addEventListener("click", createHTML);
 
+//toggle dropdown list function
+
 function toggleDropdown() {
   var dropdown = document.querySelector(".dropdown");
 
@@ -139,6 +141,12 @@ function toggleDropdown() {
 
 //hiding the dropdown list after clicking one of the buttons ".avatar" or ".go" button
 
+let avatarButton = document.querySelector(".avatar")
+let goButton = document.querySelector(".go")
+let menuButton = document.querySelector(".menu")
+let dropdown = document.querySelector(".dropdown")
+let placard = document.querySelector(".placard")
+
 function hideDropdown() {
   var dropdown = document.querySelector(".dropdown");
   if(dropdown != null){
@@ -146,24 +154,44 @@ function hideDropdown() {
   }
 }
 
-let avatarButton = document.querySelector(".avatar")
+
 avatarButton.addEventListener("click",hideDropdown)
-let goButton = document.querySelector(".go")
 goButton.addEventListener("click",hideDropdown)
+
+//hiding ".go" button and placard after clicking any of the buttons
+
+
+// function hideGoAndPlacard(){
+//   if(placard != null && goButton !=null){
+//     placard.display.style = "none";
+//     goButton.display.style = "none";
+//   }
+// }
+
+// avatarButton.addEventListener("click",hideGoAndPlacard)
+// goButton.addEventListener("click",hideGoAndPlacard)
+// menuButton.addEventListener("click",hideGoAndPlacard)
+
+
+// ----------------------------------------------------------------
 
 window.onload = function () {
   var button = document.querySelector('.menu');
   button.click();
 };
 
-//show go button only when a item in "sub-dropdown" has been clicked
+// -----------------------------------------------------------------
 
-const container = document.getElementById('container');
+//show go button and placard when a item in "sub-dropdown" has been clicked
+
+  const container = document.getElementById('container');
   const goBtn = document.querySelector('.go');
 
   container.addEventListener('click', (event) => {
     const clickedElement = event.target;
     if (clickedElement.classList.contains('sub-dropdown-item')) {
       goBtn.style.display = 'block';
+      placard.style.display = 'block';
     }
+  
   });
