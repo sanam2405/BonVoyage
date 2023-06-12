@@ -264,12 +264,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    background-color: rgba(237, 120, 106, 0.5); /* Adjust the opacity as needed */
+    /* background-color: rgba(237, 120, 106, 0.5); Adjust the opacity as needed */
     border-radius: 5px;
     z-index: 2;
     height: 300px;
     width: 400px;
     font-family: var(--font-comic-neue);
+    background-color: rgba(221,221,221,0.5);
   }
   
   .placard .content {
@@ -314,16 +315,31 @@
     }
 
   #exitBtn {
-    background-color: #ff5c5c;
+    background-color: #fe0f0f;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  #exitBtn:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
   }
   
   #dummyBtn {
-    background-color: yellow;
+    background-color: rgb(255, 230, 0);
   }
   
+  #dummyBtn:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.5);
+  }
+
   #maximizeBtn {
     background-color: green;
+    transition: box-shadow 0.3s ease-in-out;
   }
+  
+  #maximizeBtn:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+  }
+
+
   /* Footer styles */
   .footer {
     display: flex;
