@@ -166,15 +166,16 @@
       border: 0.125rem solid black;
       border-radius: 0 0.5rem 0.5rem 0.5rem;
       border-style: groove;
-      width: 20rem;
+      width: 11rem;
       font-family: var(--font-comic-neue);
+      max-height: 30rem;
   }
   
   .dropdown-item {
-    padding: 0.5rem 1rem; /* Adjust the padding values as per your preference */
+    padding: 0.5rem 1rem; 
     cursor: pointer;
     font-size: 25px;
-    color: #ed786a; /* Adjust the font size as per your preference */
+    color: #ed786a; 
   }
   
   
@@ -199,6 +200,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-y: scroll;
+    max-height: 40rem;
   }
   
   .sub-dropdown-item {
@@ -226,7 +229,6 @@
     text-align: center;
     font-size: var(--font-size-small);
     font-family: var(--font-indie-flower);
-    /* Adjust the margin as needed */
   }
   
   h1 {
@@ -243,9 +245,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-    /* Horizontally center the content */
     align-items: center;
-    /* Vertically center the content */
+    
     margin-bottom: 8rem;
   }
   
@@ -253,8 +254,112 @@
     text-align: center;
     font-family: var(--font-comic-neue);
   }
+/* placard style */
+  .placard {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    z-index: 99999999;
+    height: 28rem;
+    width: 37rem;
+    font-family: var(--font-comic-neue);
+    background-color: rgba(225,225,225,0.027);
+    backdrop-filter: blur(0.0625rem);
+    border:0.0625rem solid black;
+    box-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(0,0,0,0.4);
+  }
   
+  .placard .content {
+    border-radius: 0.3125rem;
+    padding: 0.0625rem;
+  }
+    
+    .button-group {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 0.625rem;
+    }
+    
+    .card-button {
+      margin-right: 0.3125rem;
+      padding: 0.3125rem;
+      background-color: #fff;
+      color: #ed786a;
+      border: none;
+      border-radius: 50%;
+      width: 0.75rem;
+      height: 0.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 10.7rem; 
+      height: 10.7  rem; 
+      background-color: #ccc; 
+      margin: 0.625rem;
+    }
+ 
+    .picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: solid black 0.1rem ;
+    }
+    
+    .content {
+      display: flex;
+    }
+    
+    .info {
+      flex-grow: 1;
+      font-size: var(--font-size-small);
+    }
+
+    .info p{
+      z-index: 9999999;
+      font-weight: 600;
+    }
+
+    .placard h2{
+      margin-top: 0.1rem;
+    }
+
+  #exitBtn {
+    background-color: #fe0f0f;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  #exitBtn:hover {
+    box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 0, 0, 0.5);
+  }
   
+  #dummyBtn {
+    background-color: rgb(255, 230, 0);
+  }
+  
+  #dummyBtn:hover {
+    box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 255, 0, 0.5);
+  }
+
+  #maximizeBtn {
+    background-color: green;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  #maximizeBtn:hover {
+    box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 255, 0, 0.5);
+  }
+
+
   /* Footer styles */
   .footer {
     display: flex;
@@ -300,11 +405,35 @@
       /* padding: 0.15 0.3; */
       margin: 0.15 0.15;
     }
+
+    .sub-dropdown {
+      display: none;
+      position: absolute;
+      /* top: 0;
+      left: 100%; */
+      z-index: 99999;
+      color: #ed786a;
+      border: 0.125rem solid black;
+      min-width: 10rem;
+      border-radius: 0 0.5rem;
+      top : 0;
+      left : 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow-y: scroll;
+      max-height: 14rem;
+    }
+    
+    .sub-dropdown-item {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
   
     .go {
       height: 3rem;
       width: 10rem;
-      padding: 5px 10px;
+      padding: 0.3125rem 0.625rem;
     }
   
     .searchBox {
@@ -323,12 +452,105 @@
     .dropdown-item{
       font-size: 1.2rem;
     }
+
+    .placard {
+      display: none;
+      flex-direction: column; 
+      position: absolute;
+      top: 64%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0.5rem;
+      border-radius: 0.3125rem;
+      z-index: 99999999;
+      height: 13rem;
+      width: 16rem;
+      font-family: var(--font-comic-neue);
+      background-color: rgba(225,225,225,0.027);
+      backdrop-filter: blur(0.0625rem);
+      border:0.0625rem solid black;
+      box-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(0,0,0,0.4);
+    }
+    .placard .content {
+      border-radius: 0.3125rem;
+      padding: 0.0625rem;
+    }
+      
+      .button-group {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0.625rem;
+      }
+      
+      .card-button {
+        margin-right: 0.3125rem;
+        padding: 0.3125rem;
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 0.50rem;
+        height: 0.50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .picture {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5rem; /* Adjust the width as needed */
+        height: 5rem; /* Adjust the height as needed */
+        background-color: #ccc; /* Placeholder background color */
+        margin: 0.625rem;
+      }
+   
+      .picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .content {
+        display: flex;
+      }
+      
+      .info {
+        flex-grow: 1;
+        font-size: 0.8rem;
+      }
+  
+    #exitBtn {
+      background-color: #fe0f0f;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    #exitBtn:hover {
+      box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 0, 0, 0.5);
+    }
+    
+    #dummyBtn {
+      background-color: rgb(255, 230, 0);
+    }
+    
+    #dummyBtn:hover {
+      box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 255, 0, 0.5);
+    }
+  
+    #maximizeBtn {
+      background-color: green;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    #maximizeBtn:hover {
+      box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 255, 0, 0.5);
+    }
+  
   
   }
   
   /* Tablet */
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .navBar {
+   @media screen and (min-width: 768px) and (max-width: 1250px) {
+   .navBar {
       top: 0.5rem;
       width: 100%;
       align-items: flex-start;
@@ -370,5 +592,80 @@
   
     .footer {
       font-size: 0.9rem;
+    }
+
+
+  ::-webkit-scrollbar {
+    width: 3px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: gray; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  .placard {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    border-radius: 0.5048rem;
+    z-index: 99999999;
+    height: 21rem;
+    width: 28rem;
+    font-family: var(--font-comic-neue);
+    background-color: rgba(225,225,225,0.027);
+    backdrop-filter: blur(0.0625rem);
+    border:0.0625rem solid black;
+    box-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(0,0,0,0.4);
+  }
+
+  .placard .content {
+    border-radius: 0.52rem;
+    padding: 0.1rem;
+  }
+    
+    .button-group {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 1rem;
+    }
+    
+    .card-button {
+      margin-right: 0.52rem;
+      padding: 0.52rem;
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 0.83rem;
+      height: 0.83rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 8.3rem; /* Adjust the width as needed */
+      height: 8.3rem; /* Adjust the height as needed */
+      background-color: #ccc; /* Placeholder background color */
+      margin: 1rem;
+    } 
+
+    .info {
+      flex-grow: 1;
+      font-size: 1.33rem;
     }
   }
