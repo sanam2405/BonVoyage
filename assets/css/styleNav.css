@@ -519,6 +519,10 @@
         flex-grow: 1;
         font-size: 0.8rem;
       }
+
+      .info p {
+        font-weight: 600;
+      }
   
     #exitBtn {
       background-color: #fe0f0f;
@@ -667,5 +671,9 @@
     .info {
       flex-grow: 1;
       font-size: 1.33rem;
+    }
+
+    .info p {
+      font-weight: 600;
     }
   }
