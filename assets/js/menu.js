@@ -146,6 +146,8 @@ let goButton = document.querySelector(".go")
 let menuButton = document.querySelector(".menu")
 let dropdown = document.querySelector(".dropdown")
 let placard = document.querySelector(".placard")
+let exitBtn = document.querySelector(".exitBtn")
+let maximizeBtn = document.querySelector("maximizeBtn")
 
 function hideDropdown() {
   var dropdown = document.querySelector(".dropdown");
@@ -191,7 +193,9 @@ window.onload = function () {
     const clickedElement = event.target;
     if (clickedElement.classList.contains('sub-dropdown-item')) {
       goBtn.style.display = 'block';
-      placard.style.display = 'block';
+      placard.style.display = 'flex';
     }
   
   });
+
+  
