@@ -337,22 +337,29 @@
   #exitBtn {
     background-color: #fe0f0f;
     transition: box-shadow 0.3s ease-in-out;
+    text-emphasis: 600;
+    color: black;
   }
   #exitBtn:hover {
     box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 0, 0, 0.5);
   }
   
   #dummyBtn {
-    background-color: rgb(255, 230, 0);
+    background-color: #fdbd41;
+    transition: box-shadow 0.3s ease-in-out;
+    text-emphasis: 600;
+    color: black;
   }
   
   #dummyBtn:hover {
-    box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 255, 0, 0.5);
+    box-shadow: 0 0 0.625rem 0.3125rem rgba(253, 189, 65, 0.5);
   }
 
   #maximizeBtn {
-    background-color: green;
+    background-color: #34c84a;
     transition: box-shadow 0.3s ease-in-out;
+    text-emphasis: 600;
+    color: black;
   }
   
   #maximizeBtn:hover {
@@ -524,32 +531,39 @@
         font-weight: 600;
       }
   
-    #exitBtn {
-      background-color: #fe0f0f;
-      transition: box-shadow 0.3s ease-in-out;
-    }
-    #exitBtn:hover {
-      box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 0, 0, 0.5);
-    }
+      #exitBtn {
+        background-color: #fe0f0f;
+        transition: box-shadow 0.3s ease-in-out;
+        text-emphasis: 600;
+        color: black;
+      }
+      #exitBtn:hover {
+        box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 0, 0, 0.5);
+      }
+      
+      #dummyBtn {
+        background-color: #fdbd41;
+        transition: box-shadow 0.3s ease-in-out;
+        text-emphasis: 600;
+        color: black;
+      }
+      
+      #dummyBtn:hover {
+        box-shadow: 0 0 0.625rem 0.3125rem rgba(253, 189, 65, 0.5);
+      }
     
-    #dummyBtn {
-      background-color: rgb(255, 230, 0);
-    }
-    
-    #dummyBtn:hover {
-      box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 255, 0, 0.5);
-    }
+      #maximizeBtn {
+        background-color: #34c84a;
+        transition: box-shadow 0.3s ease-in-out;
+        text-emphasis: 600;
+        color: black;
+      }
+      
+      #maximizeBtn:hover {
+        box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 255, 0, 0.5);
+      }
   
-    #maximizeBtn {
-      background-color: green;
-      transition: box-shadow 0.3s ease-in-out;
-    }
-    
-    #maximizeBtn:hover {
-      box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 255, 0, 0.5);
-    }
-  
-  
+
   }
   
   /* Tablet */
@@ -675,5 +689,37 @@
 
     .info p {
       font-weight: 600;
+    }
+
+    #exitBtn {
+      background-color: #fe0f0f;
+      transition: box-shadow 0.3s ease-in-out;
+      text-emphasis: 600;
+      color: black;
+    }
+    #exitBtn:hover {
+      box-shadow: 0 0 0.625rem 0.3125rem rgba(255, 0, 0, 0.5);
+    }
+    
+    #dummyBtn {
+      background-color: #fdbd41;
+      transition: box-shadow 0.3s ease-in-out;
+      text-emphasis: 600;
+      color: black;
+    }
+    
+    #dummyBtn:hover {
+      box-shadow: 0 0 0.625rem 0.3125rem rgba(253, 189, 65, 0.5);
+    }
+  
+    #maximizeBtn {
+      background-color: #34c84a;
+      transition: box-shadow 0.3s ease-in-out;
+      text-emphasis: 600;
+      color: black;
+    }
+    
+    #maximizeBtn:hover {
+      box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 255, 0, 0.5);
     }
   }
