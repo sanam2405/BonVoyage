@@ -199,6 +199,8 @@ function hideGoButtonAlways() {
 menuButton.addEventListener('click', () => {
   hidePlacardAlways();
   hideGoButtonAlways();
+  window.removeMarker();
+  goButton.textContent = "Let's Walk"
 });
 
 
@@ -241,6 +243,10 @@ goButton.addEventListener('click', () => {
   toggleDropdown();
 });
 
+avatarButton.addEventListener('click', () => {
+
+    window.location.href = 'index.html';
+});
 
 // ----------------------------------------------------------------
 
