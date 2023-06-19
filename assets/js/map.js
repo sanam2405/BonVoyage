@@ -1,5 +1,5 @@
 var centreLat = 22.5372339;
-var centreLong =  88.3317497;
+var centreLong = 88.3317497;
 var map;
 var marker;
 const locationMap = new Map();
@@ -28,9 +28,9 @@ fetch('./assets/js/zoo.json')
 function initMap() {
     // Create a new map instance
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: centreLat, lng: centreLong}, // Set the initial map center
+        center: { lat: centreLat, lng: centreLong }, // Set the initial map center
         zoom: 18.25,// Set the initial zoom level
-        disableDefaultUI:true,
+        disableDefaultUI: true,
     });
 }
 
@@ -53,10 +53,12 @@ function addMarker(latitude, longitude, title) {
 }
 
 
+function removeMarker() {
 
-document.querySelector('.avatar').addEventListener('click', function () {
-    addMarker();
-});
+    if (marker) {
+        marker.setMap(null);
+    }
+}
 
 
 initMap();

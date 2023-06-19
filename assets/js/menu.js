@@ -42,10 +42,10 @@ fetch('./assets/js/zoo.json')
 
 // function to render differently 
 function shiftMarker() {
-  if(window.innerHeight > window.innerWidth)
-    return 0.357*window.innerHeight;
+  if (window.innerHeight > window.innerWidth)
+    return 0.357 * window.innerHeight;
   else
-    return 0.252*window.innerHeight;
+    return 0.252 * window.innerHeight;
 }
 
 //------------------------------------------------
@@ -86,10 +86,10 @@ function createHTML() {
           if (location) {
             const { latitude, longitude } = location;
             // Change the center of the map dynamically
-            map.panTo({ lat: latitude, lng: longitude }); 
-            map.panBy(0,-shiftMarker());
+            map.panTo({ lat: latitude, lng: longitude });
+            map.panBy(0, -shiftMarker());
             // Show the marker
-            window.addMarker(latitude, longitude, subItem); 
+            window.addMarker(latitude, longitude, subItem);
             console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
           } else {
             console.log(`Location not found for name: ${name}`);
@@ -128,51 +128,118 @@ createButton.addEventListener("click", createHTML);
 
 function toggleDropdown() {
   var dropdown = document.querySelector(".dropdown");
-
   if (dropdown != null) {
     if (dropdown.style.display === "none") {
       dropdown.style.display = "block";
-      // dropdown.style.flexDirection = "column";
     } else {
       dropdown.style.display = "none";
     }
   }
 }
 
-//hiding the dropdown list after clicking one of the buttons ".avatar" or ".go" button
+// --------------------------------------------------------------------------------------------------------------
+// Button Functionalities
+
+
+// Buttons
 
 let avatarButton = document.querySelector(".avatar")
 let goButton = document.querySelector(".go")
 let menuButton = document.querySelector(".menu")
+let subDropdown = document.querySelector(".sub-dropdown")
 let dropdown = document.querySelector(".dropdown")
 let placard = document.querySelector(".placard")
-let exitBtn = document.querySelector(".exitBtn")
-let maximizeBtn = document.querySelector("maximizeBtn")
+let exitButton = document.querySelector("#exitBtn")
+let maximizeButton = document.querySelector("#maximizeBtn")
+
 
 function hideDropdown() {
-  var dropdown = document.querySelector(".dropdown");
-  if(dropdown != null){
+  if (dropdown != null) {
     dropdown.style.display = "none";
   }
 }
 
 
-avatarButton.addEventListener("click",hideDropdown)
-goButton.addEventListener("click",hideDropdown)
+// -----------------------------------------------------------------
 
-//hiding ".go" button and placard after clicking any of the buttons
+//show go button and placard when a item in "sub-dropdown" has been clicked
+
+const container = document.getElementById('container')
+
+container.addEventListener('click', (event) => {
+  const clickedElement = event.target;
+  if (clickedElement.classList.contains('sub-dropdown-item')) {
+    goButton.style.display = 'block';
+    placard.style.display = 'flex';
+  }
+
+});
 
 
-// function hideGoAndPlacard(){
-//   if(placard != null && goButton !=null){
-//     placard.display.style = "none";
-//     goButton.display.style = "none";
-//   }
-// }
+function hidePlacardAlways() {
+  placard.style.display = "none";
+}
 
-// avatarButton.addEventListener("click",hideGoAndPlacard)
-// goButton.addEventListener("click",hideGoAndPlacard)
-// menuButton.addEventListener("click",hideGoAndPlacard)
+function hidePlacard() {
+  if (exitButton != null) {
+    placard.style.display = "none";
+  }
+}
+
+function hideGoButton() {
+  if (goButton != null) {
+    goButton.style.display = "none";
+  }
+}
+
+function hideGoButtonAlways() {
+  goButton.style.display = "none";
+}
+
+menuButton.addEventListener('click', () => {
+  hidePlacardAlways();
+  hideGoButtonAlways();
+});
+
+
+placard.addEventListener('click', (event) => {
+  const clickedElement = event.target;
+  if (clickedElement.id === 'exitBtn') {
+    hidePlacard();
+    hideGoButton();
+    window.removeMarker();
+  }
+
+  if (clickedElement.id === 'maximizeBtn') {
+    window.open('https://www.neymarjr.com/en', '_blank');
+  }
+});
+
+// Function to handle the button click event
+function changeToCancel() {
+  // Change the button text to "Stop"
+  if (goButton.textContent === "Let's Walk") {
+    goButton.textContent = 'Stop';
+
+    // Add CSS class to apply the red button style
+    goButton.classList.add('red-button');
+
+    // Add the function to render the direction and navigation
+
+  } else {
+    goButton.textContent = "Let's Walk";
+    goButton.classList.remove('red-button');
+    window.removeMarker();
+    goButton.style.display = "none";
+  }
+}
+
+
+goButton.addEventListener('click', () => {
+  hidePlacardAlways();
+  changeToCancel();
+  toggleDropdown();
+});
 
 
 // ----------------------------------------------------------------
@@ -181,21 +248,3 @@ window.onload = function () {
   var button = document.querySelector('.menu');
   button.click();
 };
-
-// -----------------------------------------------------------------
-
-//show go button and placard when a item in "sub-dropdown" has been clicked
-
-  const container = document.getElementById('container');
-  const goBtn = document.querySelector('.go');
-
-  container.addEventListener('click', (event) => {
-    const clickedElement = event.target;
-    if (clickedElement.classList.contains('sub-dropdown-item')) {
-      goBtn.style.display = 'block';
-      placard.style.display = 'flex';
-    }
-  
-  });
-
-  
