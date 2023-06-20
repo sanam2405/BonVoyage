@@ -116,8 +116,8 @@ function getDirection(lastMarkerLat,lastMarkerLong){
   const directionsRenderer = new google.maps.DirectionsRenderer();
   const directionsService = new google.maps.DirectionsService();
   const whereTo = google.maps.LatLng(
-    parseFloat(22.538995),
-    parseFloat(88.332555)
+    parseFloat(lastMarkerLat),
+    parseFloat(lastMarkerLong)
   ); 
   directionsRenderer.setMap(map);
   directionsService.route({
@@ -135,7 +135,7 @@ function getUserLocation(){
     const position = navigator.geolocation.getCurrentPosition()
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    return google.maps.LatLng(22.53707,88.333277);
+    return google.maps.LatLng(latitude,longitude);
   }
   else{
     console.error("User position not available");
