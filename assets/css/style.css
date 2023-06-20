@@ -106,6 +106,32 @@ button {
   box-shadow: 0 0 0.625rem green;
 }
 
+/* Homepage Let's Go button styles */
+.letsGoButton {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: green;
+}
+
+.letsGo {
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: 5rem;
+  width: 15rem;
+  border: 0.125rem solid green;
+  color: green;
+  font-family: var(--font-comic-neue);
+  background-color: #ffffe0;
+  cursor: pointer;
+  font-size: var(--font-size-smallgo);
+}
+
+.letsGo:hover {
+  border-color: green;
+  box-shadow: 0 0 0.625rem green;
+}
+
 /* Sign Up and Sign In button styles */
 .signUp,
 .signIn {
@@ -154,7 +180,7 @@ option {
   font-family: var(--font-comic-neue);
 }
 
-.dropdown {
+.dropdownPlaces {
   /* Adjust the width as needed */
   padding: 0.625rem;
   width: 60rem;
@@ -172,7 +198,7 @@ option {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.dropdown:hover {
+.dropdownPlaces:hover {
   border-color: #808080;
   box-shadow: 0 0 5px #808080;
 }
@@ -196,7 +222,7 @@ option {
     font-size: var(--font-size-mediumMob);
   }
 
-  .dropdown {
+  .dropdownPlaces {
     /* Adjust the width as needed */
     padding: 0.2rem;
     width: 20rem;
@@ -228,7 +254,7 @@ option {
     border: 0.125rem solid red;
   }
 
-  .go {
+  .letsGo {
     height: 3rem;
     width: 10rem;
     padding: 5px 10px;
@@ -253,7 +279,7 @@ option {
     font-size: var(--font-size-mediumTab);
   }
 
-  .dropdown {
+  .dropdownPlaces {
     /* Adjust the width as needed */
     padding: 0.2rem;
     width: 41rem;
@@ -280,7 +306,7 @@ option {
     border: 0.125rem solid red;
   }
 
-  .go {
+  .letsGo {
     height: 6rem;
     width: 22rem;
     padding: 5px 10px;

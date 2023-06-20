@@ -1,0 +1,35 @@
+[
+    {
+      "_id": "zoo",
+      "name": "Alipore Zoo",
+      "location": {
+          "latitude": 22.535464,
+          "longitude": 88.332762,
+          "zoom": 18.25
+       }
+      
+    },
+
+    {
+      "_id": "ju",
+      "name": "Jadavpur University",
+      "location": {
+          "latitude": 22.498882,
+          "longitude": 88.371412,
+          "zoom": 18.25
+       }
+      
+    },
+
+    {
+      "_id": "bgarden",
+      "name": "Botanical Garden",
+      "location": {
+          "latitude": 22.559228,
+          "longitude": 88.290489,
+          "zoom": 17
+       }
+      
+    }
+    
+]

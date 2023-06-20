@@ -1,7 +1,10 @@
 var menuItems = [];
+var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
+// console.log(currentLocationToLoad)
 
+const jsonPath = `./assets/js/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
-fetch('./assets/js/zoo.json')
+fetch(jsonPath)
   .then(response => response.json())
   .then(data => {
 
