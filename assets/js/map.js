@@ -84,9 +84,37 @@ function addMarker(latitude, longitude, title) {
 
 
 function removeMarker() {
-
     if (marker) {
         marker.setMap(null);
     }
 }
 
+function getDirection(lastMarkerLat,lastMarkerLong){
+  const directionsRenderer = new google.maps.DirectionsRenderer();
+  const directionsService = new google.maps.DirectionsService();
+  const whereTo = google.maps.LatLng(
+    parseFloat(22.538995),
+    parseFloat(88.332555)
+  ); 
+  directionsRenderer.setMap(map);
+  directionsService.route({
+    origin:getUserLocation(),
+    destination:whereTo,
+    travelMode: 'WALKING' 
+  })
+  .then((response)=>{
+    directionsRenderer.setDirections(response);
+  })
+}
+
+function getUserLocation(){
+  if(navigator.geolocation){
+    const position = navigator.geolocation.getCurrentPosition()
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    return google.maps.LatLng(22.53707,88.333277);
+  }
+  else{
+    console.error("User position not available");
+  }
+}
