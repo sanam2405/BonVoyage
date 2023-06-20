@@ -1,16 +1,31 @@
-const dropdown = document.querySelector('.dropdown');
+var currentLocation = sessionStorage.getItem('currentLocationValue');
+
+const dropdownPlaces = document.querySelector('.dropdownPlaces');
 
 // Event listener to store the selected value in session storage
-dropdown.addEventListener('change', function() {
-  const selectedValue = dropdown.value;
-  sessionStorage.setItem('selectedValue', selectedValue);
-});
 
+if(dropdownPlaces != null) {
 
-// Retrieve the stored value from session storage
-const storedValue = sessionStorage.getItem('selectedValue');
+  dropdownPlaces.addEventListener('change', function() {
+    
+    currentLocation = dropdownPlaces.value;
+    console.log(currentLocation);
 
-// Set the selected value in the dropdown if it exists in session storage
-if (storedValue) {
-    dropdown.value = storedValue;
-  }
+    if(currentLocation === null) {
+      currentLocation = "ju";
+    }
+
+    sessionStorage.setItem('currentLocationValue', currentLocation);
+  });
+}
+
+const letsGoButton = document.querySelector('.letsGoButton');
+
+if(letsGoButton != null) {
+
+  letsGoButton.addEventListener('click', function() {
+
+    // Load the navigation.html page
+    window.location.href = 'navigation.html';
+  });
+}
