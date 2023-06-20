@@ -4,14 +4,14 @@ const dropdownPlaces = document.querySelector('.dropdownPlaces');
 
 // Event listener to store the selected value in session storage
 
-if(dropdownPlaces != null) {
+if (dropdownPlaces != null) {
 
-  dropdownPlaces.addEventListener('change', function() {
-    
+  dropdownPlaces.addEventListener('change', function () {
+
     currentLocation = dropdownPlaces.value;
     console.log(currentLocation);
 
-    if(currentLocation === null) {
+    if (currentLocation === null) {
       currentLocation = "ju";
     }
 
@@ -21,11 +21,14 @@ if(dropdownPlaces != null) {
 
 const letsGoButton = document.querySelector('.letsGoButton');
 
-if(letsGoButton != null) {
+if (letsGoButton != null) {
 
-  letsGoButton.addEventListener('click', function() {
+  letsGoButton.addEventListener('click', function () {
 
-    // Load the navigation.html page
-    window.location.href = 'navigation.html';
+    if (dropdownPlaces.value != "placeholder") {
+
+      // Load the navigation.html page
+      window.location.href = 'navigation.html';
+    }
   });
 }
