@@ -26,6 +26,8 @@ function populateMap(currentLocationToLoad) {
       })
       .catch(error => {
         console.error('Error:', error);
+        // Reload the current page and bypass the cache
+        location.reload(true);
       });
   }
 
@@ -50,6 +52,8 @@ fetch('./assets/js/location.json')
   })
   .catch(error => {
     console.error('Error:', error);
+    // Reload the current page and bypass the cache
+    location.reload(true);
   });
 
 

@@ -9,7 +9,7 @@ if (dropdownPlaces != null) {
   dropdownPlaces.addEventListener('change', function () {
 
     currentLocation = dropdownPlaces.value;
-    console.log(currentLocation);
+    // console.log(currentLocation);
 
     if (currentLocation === null) {
       currentLocation = "ju";
@@ -35,6 +35,8 @@ if (letsGoButton != null) {
 
 const selectElement = document.getElementById('placesSelect');
 
+if(selectElement != null) {
+
   // Populate the select element with options from the JSON data
   fetch('./assets/js/location.json')
     .then(response => response.json())
@@ -52,3 +54,4 @@ const selectElement = document.getElementById('placesSelect');
     .catch(error => {
       console.error('Error fetching JSON data:', error);
     });
+  }

@@ -93,7 +93,7 @@ function createHTML() {
             map.panBy(0, -shiftMarker());
             // Show the marker
             window.addMarker(latitude, longitude, subItem);
-            console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+            // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
           } else {
             console.log(`Location not found for name: ${name}`);
           }
