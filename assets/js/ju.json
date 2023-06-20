@@ -1,272 +1,361 @@
 [
     {
         "_id": 1,
-        "category": "Education",
+        "category": "Departments",
         "description": {
-            "name": "CSE",
-            "className": "Mammal",
-            "scientificName": "Equus zebra",
-            "age": 6,
-            "gender": "male"
+            "name": "Architecture",
+            "founded": "1965"
         },
         "location": {
-            "latitude": 22.535464,
-            "longitude": 88.332762,
+            "latitude": 22.496413,
+            "longitude": 88.370806 ,
             "iconType": "zebra"
         }
     },
     {
         "_id": 2,
-        "category": "Wildlife",
+        "category": "Departments",
         "description": {
-            "name": "Bear",
-            "className": "Mammal",
-            "scientificName": "Melursus ursinus",
-            "age": 14,
-            "gender": "female"
+            "name": "Chemical",
+            "founded": "1921"
         },
         "location": {
-            "latitude": 22.534778,
-            "longitude": 88.332742,
-            "iconType": "bear"
+            "latitude": 22.49701,
+            "longitude": 88.373027,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 3,
-        "category": "Wildlife",
+        "category": "Departments",
         "description": {
-            "name": "Deer",
-            "className": "Mammal",
-            "scientificName": "Axis axis",
-            "age": 8,
-            "gender": "male"
+            "name": "Civil",
+            "founded": "1956"
         },
         "location": {
-            "latitude": 22.534272,
-            "longitude": 88.331402,
-            "iconType": "deer"
+            "latitude": 22.49669,
+            "longitude": 88.371313,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 4,
-        "category": "Wildlife",
+        "category": "Departments",
         "description": {
-            "name": "Leopard",
-            "className": "Mammal",
-            "scientificName": "Panthera pardus fusca",
-            "age": 13,
-            "gender": "male"
+            "name": "Comp Sc.",
+            "founded": "1988"
         },
         "location": {
-            "latitude":  22.537222,
-            "longitude": 88.331215,
-            "iconType": "leopard"
+            "latitude": 22.497015,
+            "longitude": 88.371083,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 5,
-        "category": "Wildlife",
+        "category": "Departments",
         "description": {
-            "name": "Bengal Tiger",
-            "className": "Mammal",
-            "scientificName": "Panthera tigris",
-            "age": 12,
-            "gender": "female"
+            "name": "Electrical",
+            "founded": "1906"
         },
         "location": {
-            "latitude":  22.537157,
-            "longitude": 88.33254,
-            "iconType": "tiger"
+            "latitude": 22.496368,
+            "longitude": 88.371611,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 6,
-        "category": "Wildlife",
+        "category": "Departments",
         "description": {
-            "name": "Asiatic Lion",
-            "className": "Mammal",
-            "scientificName": " Panthera leo",
-            "age": 11,
-            "gender": "male"
+            "name": "Electronics & Tele Comm",
+            "founded": "1957"
         },
         "location": {
-            "latitude": 22.538995,
-            "longitude": 88.332555,
-            "iconType": "lion"
+            "latitude":  22.496418,
+            "longitude": 88.370918,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 7,
-        "category": "Wildlife",
+        "category": "Departments",
         "description": {
-            "name": "Chimpanzee",
-            "className": "Mammal",
-            "scientificName": "Pan troglodytes",
-            "age": 8,
-            "gender": "male"
+            "name": "Food Tech",
+            "founded": "1964"
         },
         "location": {
-            "latitude": 22.535804,
-            "longitude": 88.332388,
-            "iconType": "chimpanzee"
+            "latitude": 22.497147,
+            "longitude": 88.373467,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 8,
-        "category": "Wildlife",
+        "category": "Departments",
         "description": {
-            "name": "Giraffe",
-            "className": "Mammal",
-            "scientificName": "Giraffa camelopardalis",
-            "age": 15,
-            "gender": "female"
+            "name": "Mechanical",
+            "founded": "1906"
         },
         "location": {
-            "latitude": 22.538161,
-            "longitude": 88.332239,
-            "iconType": "giraffe"
+            "latitude": 22.497762, 
+            "longitude": 88.372986,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 9,
-        "category": "ATM",
+        "category": "Departments",
         "description": {
-            "name": "Canara Bank ATM"
+            "name": "Metallurgical",
+            "founded": "1956"
         },
         "location": {
-            "latitude": 22.533224,
-            "longitude": 88.331067,
-            "iconType": "bank"
+            "latitude": 22.499876,
+            "longitude" : 88.371499,
+            "iconType" : "zebra"
         }
     },
     {
         "_id": 10,
-        "category": "ATM",
+        "category": "Departments",
         "description": {
-            "name": "ICICI Bank ATM"
+            "name": "Pharmaceutical",
+            "founded": "1963"
         },
         "location": {
-            "latitude":  22.533168,
-            "longitude": 88.329465,
-            "iconType": "bank"
+            "latitude": 22.501249, 
+            "longitude": 88.370459,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 11,
-        "category": "Toilet",
+        "category": "Departments",
         "description": {
-            "name": "Sulabh Sauchalay",
-            "male": true,
-            "female": true
+            "name": "Production",
+            "founded": "1980"
         },
         "location": {
-            "latitude": 22.540415,
-            "longitude": 88.330552,
-            "iconType": "toilet"
+            "latitude": 22.497464,
+            "longitude": 88.37109, 
+            "iconType": "zebra"
         }
     },
     {
         "_id": 12,
-        "category": "Toilet",
+        "category": "Administration",
         "description": {
-            "name": "Ladies Toilet",
-            "male": false,
-            "female": true
+            "name": "Aurobindo Bhavan"
         },
         "location": {
-            "latitude": 22.533215,
-            "longitude":88.330867,
-            "iconType": "toilet"
+            "latitude": 22.496468,
+            "longitude": 88.372405 ,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 13,
-        "category": "Toilet",
+        "category": "Administration",
         "description": {
-            "name": "Unisex Toilet",
-            "male": true,
-            "female": true
+            "name": "TEQUIP Building"
         },
         "location": {
-            "latitude":  22.53707,
-            "longitude": 88.333277,
-            "iconType": "toilet"
+            "latitude": 22.498987,
+            "longitude": 88.370256,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 14,
-        "category": "Toilet",
+        "category": "Administration",
         "description": {
-            "name": "Gents Toilet",
-            "male": true,
-            "female": false
+            "name": "MR Section"
         },
         "location": {
-            "latitude": 22.537078,
-            "longitude": 88.33336,
-            "iconType": "toilet"
+            "latitude":  22.496868,
+            "longitude": 88.372542,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 15,
-        "category": "Administrative",
+        "category": "Administration",
         "description": {
-            "name": "Ticket Counter"
+            "name": "Gandhi Bhavan"
         },
         "location": {
-            "latitude":  22.53609,
-            "longitude": 88.333265,
-            "iconType": "admin"
+            "latitude": 22.499604, 
+            "longitude": 88.371014, 
+            "iconType": "zebra"
         }
     },
     {
         "_id": 16,
-        "category": "Administrative",
+        "category": "Canteen",
         "description": {
-            "name": "Nature Information Centre"
+            "name": "Milan Da'r Canteen"
         },
         "location": {
-            "latitude":  22.537782,
-            "longitude": 88.330746,
-            "iconType": "admin"
+            "latitude": 22.500904, 
+            "longitude": 88.370362,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 17,
-        "category": "Administrative",
+        "category": "Canteen",
         "description": {
-            "name": "Senapati Bhavan"
+            "name": "Suruchi Canteen"
         },
         "location": {
-            "latitude": 22.533248,
-            "longitude": 88.330732,
-            "iconType": "admin"
+            "latitude": 22.498757,
+            "longitude": 88.37245,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 18,
-        "category": "Food",
+        "category": "Canteen",
         "description": {
-            "name": "Food Park",
-            "vegetarian": false
+            "name": "Aahar Canteen"
         },
         "location": {
-            "latitude": 22.535803,
-            "longitude": 88.332496,
-            "iconType": "food"
+            "latitude": 22.496681,
+            "longitude": 88.372153,
+            "iconType": "zebra"
         }
     },
     {
         "_id": 19,
-        "category": "Food",
+        "category": "Canteen",
         "description": {
-            "name": "Heritage Cafe Scoop",
-            "vegetarian": true
+            "name": "PG Canteen"
         },
         "location": {
-            "latitude": 22.536406,
-            "longitude": 88.333156,
-            "iconType": "food"
+            "latitude":  22.502418,
+            "longitude": 88.370552,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 20,
+        "category": "Hostel",
+        "description": {
+            "name": "Boys' Hostel"
+        },
+        "location": {
+            "latitude": 22.501563,
+            "longitude": 88.370374,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 21,
+        "category": "Hostel",
+        "description": {
+            "name": "Old PG Hostel"
+        },
+        "location": {
+            "latitude": 22.502531,
+            "longitude": 88.370175,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 22,
+        "category": "Hostel",
+        "description": {
+            "name": "Research Scholar Hostel"
+        },
+        "location": {
+            "latitude": 22.502427,
+            "longitude": 88.370803,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 23,
+        "category": "Hostel",
+        "description": {
+            "name": "Women's Hostel"
+        },
+        "location": {
+            "latitude": 22.499875,
+            "longitude": 88.372474,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 24,
+        "category": "Misc",
+        "description": {
+            "name": "Central Library"
+        },
+        "location": {
+            "latitude": 22.498694,
+            "longitude": 88.371454 ,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 25,
+        "category": "Misc",
+        "description": {
+            "name": "Green Zone"
+        },
+        "location": {
+            "latitude": 22.498635,
+            "longitude": 88.370687,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 26,
+        "category": "Misc",
+        "description": {
+            "name": "OAT"
+        },
+        "location": {
+            "latitude": 22.501995,
+            "longitude": 88.371007,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 27,
+        "category": "Misc",
+        "description": {
+            "name": "Jheel Par"
+        },
+        "location": {
+            "latitude":  22.498842,
+            "longitude": 88.37257,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 28,
+        "category": "Misc",
+        "description": {
+            "name": "World View"
+        },
+        "location": {
+            "latitude": 22.500841,
+            "longitude": 88.370039,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 29,
+        "category": "Misc",
+        "description": {
+            "name": "Playground"
+        },
+        "location": {
+            "latitude": 22.49749,
+            "longitude": 88.372219,
+            "iconType": "zebra"
         }
     }
 ]
