@@ -93,7 +93,7 @@ function createHTML() {
             map.panBy(0, -shiftMarker());
             // Show the marker
             window.addMarker(latitude, longitude, subItem);
-            console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+            // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
           } else {
             console.log(`Location not found for name: ${name}`);
           }
@@ -115,12 +115,6 @@ function createHTML() {
   // Append the <ul> element to the container
   container.appendChild(dropdown);
   toggleDropdown();
-}
-
-// Function to show sub-item details
-function showSubItemDetails(subItem) {
-  // Your code to show details based on the sub-item ID or other relevant data
-  console.log("Showing details for sub-item:", subItem);
 }
 
 // Add click event listener to the createButton
