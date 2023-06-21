@@ -117,12 +117,6 @@ function createHTML() {
   toggleDropdown();
 }
 
-// Function to show sub-item details
-function showSubItemDetails(subItem) {
-  // Your code to show details based on the sub-item ID or other relevant data
-  console.log("Showing details for sub-item:", subItem);
-}
-
 // Add click event listener to the createButton
 var createButton = document.querySelector('.menu');
 createButton.addEventListener("click", createHTML);
