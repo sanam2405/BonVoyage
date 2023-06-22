@@ -1,5 +1,7 @@
 var menuItems = [];
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
+var lastMarkerLat;
+var lastMarkerLong; 
 // console.log(currentLocationToLoad)
 
 const jsonPath = `./assets/js/${currentLocationToLoad}.json`;
@@ -93,7 +95,9 @@ function createHTML() {
             map.panBy(0, -shiftMarker());
             // Show the marker
             window.addMarker(latitude, longitude, subItem);
-            // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+            lastMarkerLat = latitude;
+            lastMarkerLong= longitude;
+            console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
           } else {
             console.log(`Location not found for name: ${name}`);
           }
@@ -224,7 +228,7 @@ function changeToCancel() {
     goButton.classList.add('red-button');
 
     // Add the function to render the direction and navigation
-
+    window.getDirection(lastMarkerLat,lastMarkerLong);
   } else {
     goButton.textContent = "Let's Walk";
     goButton.classList.remove('red-button');
