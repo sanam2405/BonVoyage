@@ -42,7 +42,7 @@
         "_id": 4,
         "category": "Departments",
         "description": {
-            "name": "Comp Sc.",
+            "name": "CSE",
             "founded": "1988"
         },
         "location": {
@@ -68,7 +68,7 @@
         "_id": 6,
         "category": "Departments",
         "description": {
-            "name": "Electronics & Tele Comm",
+            "name": "ETCE",
             "founded": "1957"
         },
         "location": {
@@ -81,7 +81,7 @@
         "_id": 7,
         "category": "Departments",
         "description": {
-            "name": "Food Tech",
+            "name": "FTBE",
             "founded": "1964"
         },
         "location": {

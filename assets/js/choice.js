@@ -9,7 +9,7 @@ if (dropdownPlaces != null) {
   dropdownPlaces.addEventListener('change', function () {
 
     currentLocation = dropdownPlaces.value;
-    console.log(currentLocation);
+    // console.log(currentLocation);
 
     if (currentLocation === null) {
       currentLocation = "ju";
@@ -32,3 +32,26 @@ if (letsGoButton != null) {
     }
   });
 }
+
+const selectElement = document.getElementById('placesSelect');
+
+if(selectElement != null) {
+
+  // Populate the select element with options from the JSON data
+  fetch('./assets/js/location.json')
+    .then(response => response.json())
+    .then(jsonData => {
+      // Populate the select element with options from the JSON data
+      //console.log(jsonData);
+      jsonData.forEach(option => {
+        const { _id, name } = option;
+        var newOption = document.createElement("option");
+        newOption.value = _id;
+        newOption.textContent = name;
+        selectElement.appendChild(newOption);
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching JSON data:', error);
+    });
+  }

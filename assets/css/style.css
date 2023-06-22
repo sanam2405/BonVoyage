@@ -219,7 +219,7 @@ option {
 /* Mobile Styles */
 @media (max-width: 767px) {
   .heading h1 {
-    font-size: var(--font-size-mediumMob);
+    font-size: 4rem;
   }
 
   .dropdownPlaces {

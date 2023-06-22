@@ -26,31 +26,10 @@ function populateMap(currentLocationToLoad) {
       })
       .catch(error => {
         console.error('Error:', error);
+        // Reload the current page and bypass the cache
+        // location.reload();
       });
   }
-
-
-fetch('./assets/js/location.json')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach(item => {
-      if (item._id === currentLocationToLoad) {
-
-        const centreLatitude = item.location.latitude;
-        const centreLongitude = item.location.longitude;
-        const zoom = item.location.zoom;
-
-        initMap(centreLatitude,centreLongitude,zoom);   
-        populateMap(currentLocationToLoad);
-        return;
-    }
-    });
-
-    // console.log(centreLat, centreLong); // Log the values inside the then block
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 
 
 //   console.log(locationMap);
@@ -88,6 +67,50 @@ function removeMarker() {
         marker.setMap(null);
     }
 }
+
+let centreLatitude, centreLongitude, zoom;
+
+function loadMap() {
+  fetch('./assets/js/location.json')
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(item => {
+        if (item._id === currentLocationToLoad) {
+          centreLatitude = item.location.latitude;
+          centreLongitude = item.location.longitude;
+          zoom = item.location.zoom;
+          return;
+        }
+      });
+
+      if (centreLatitude && centreLongitude && zoom) {
+        initMap(centreLatitude, centreLongitude, zoom);
+        populateMap(currentLocationToLoad);
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      setTimeout(reloadPage, 10); // Retry every 0.01 seconds
+    });
+}
+
+function reloadPage() {
+  location.reload();
+}
+
+function checkForGoogle() {
+  if (typeof google !== 'undefined') {
+    // Google is available, call the functions
+    loadMap();
+  } else {
+    // Google is not available yet, retry after a delay
+    setTimeout(checkForGoogle, 10); // Retry every 0.01 seconds
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  checkForGoogle();
+});
 
 function getDirection(lastMarkerLat,lastMarkerLong){
   const directionsRenderer = new google.maps.DirectionsRenderer();
