@@ -85,7 +85,6 @@ function createHTML() {
 
         // Add event listener to the sub-item
         subListItem.addEventListener("click", function () {
-          showSubItemDetails(subItem); // Call your function and pass the sub-item ID or other relevant data
 
           const location = locationMap.get(subItem);
           if (location) {
