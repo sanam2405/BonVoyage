@@ -83,7 +83,6 @@ function createHTML() {
 
         // Add event listener to the sub-item
         subListItem.addEventListener("click", function () {
-          showSubItemDetails(subItem); // Call your function and pass the sub-item ID or other relevant data
 
           const location = locationMap.get(subItem);
           if (location) {
@@ -93,7 +92,7 @@ function createHTML() {
             map.panBy(0, -shiftMarker());
             // Show the marker
             window.addMarker(latitude, longitude, subItem);
-            // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+            console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
           } else {
             console.log(`Location not found for name: ${name}`);
           }
