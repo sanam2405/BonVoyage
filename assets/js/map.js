@@ -8,6 +8,8 @@ var directionsService;
 var userLat;
 var userLong;
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
+var directionResponse;
+
 // console.log(currentLocationToLoad)
 
 
@@ -133,6 +135,8 @@ function getDirection(lastMarkerLat,lastMarkerLong){
       })
         .then((response) => {
           directionsRenderer.setDirections(response);
+          directionResponse = response;
+          console.log("HERE IS THE RESPONSE : ",response);
         })
         .catch((e) => window.alert("Directions request failed due to " + e));
     }
