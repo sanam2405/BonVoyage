@@ -200,7 +200,10 @@ menuButton.addEventListener('click', () => {
   hidePlacardAlways();
   hideGoButtonAlways();
   window.removeMarker();
-  goButton.textContent = "Let's Walk"
+  goButton.textContent = "Let's Walk";
+  if (directionResponse.status === 'OK') {
+    removeDirection();
+  }
 });
 
 
