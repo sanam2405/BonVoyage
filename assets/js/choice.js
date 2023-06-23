@@ -1,4 +1,4 @@
-var currentLocation = sessionStorage.getItem('currentLocationValue');
+var currentLocation = localStorage.getItem('currentLocationValue');
 
 const dropdownPlaces = document.querySelector('.dropdownPlaces');
 
@@ -15,7 +15,7 @@ if (dropdownPlaces != null) {
       currentLocation = "ju";
     }
 
-    sessionStorage.setItem('currentLocationValue', currentLocation);
+    localStorage.setItem('currentLocationValue', currentLocation);
   });
 }
 
