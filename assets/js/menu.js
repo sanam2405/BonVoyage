@@ -1,7 +1,7 @@
 var menuItems = [];
-var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
 var lastMarkerLat;
 var lastMarkerLong; 
+var currentLocationToLoad = localStorage.getItem('currentLocationValue');
 // console.log(currentLocationToLoad)
 
 const jsonPath = `./assets/js/${currentLocationToLoad}.json`;
@@ -97,11 +97,42 @@ function createHTML() {
             lastMarkerLat = latitude;
             lastMarkerLong= longitude;
             console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+
+            fetch(jsonPath)
+            .then(response => response.json())
+            .then(data => {
+              // Find the selected item in the data
+              const selectedItem = data.find(item => item.description.name === subItem);
+
+    // Check if the selected item exists
+              if (selectedItem) {
+                // Update the placard content dynamically
+                var placardDetailsDiv = document.querySelector(".info");
+                placardDetailsDiv.innerHTML = Object.entries(selectedItem.description)
+                  .map(([key, value]) => `<p><strong>${key}:</strong> ${formatValue(value)}</p>`)
+                  .join('\n');
+              } else {
+                console.log(`Selected item not found in the data`);
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+
+
           } else {
             console.log(`Location not found for name: ${name}`);
           }
 
         });
+
+        function formatValue(value) {
+          if (typeof value === 'string') {
+            return value;
+          }
+          return JSON.stringify(value);
+        }
+        
 
         // Append the nested <li> elements to the nested <ul> element
         subDropdown.appendChild(subListItem);
@@ -136,6 +167,8 @@ function toggleDropdown() {
     }
   }
 }
+
+
 
 // --------------------------------------------------------------------------------------------------------------
 // Button Functionalities
@@ -216,7 +249,7 @@ placard.addEventListener('click', (event) => {
   }
 
   if (clickedElement.id === 'maximizeBtn') {
-    window.open('https://www.neymarjr.com/en', '_blank');
+    window.open('${selectedItem.description.link}', '_blank');
   }
 });
 

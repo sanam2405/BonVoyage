@@ -7,9 +7,8 @@ var directionsRenderer;
 var directionsService;
 var userLat;
 var userLong;
-var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
 var directionResponse;
-
+var currentLocationToLoad = localStorage.getItem('currentLocationValue');
 // console.log(currentLocationToLoad)
 
 
