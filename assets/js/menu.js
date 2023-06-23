@@ -233,6 +233,7 @@ function changeToCancel() {
     goButton.classList.remove('red-button');
     window.removeMarker();
     goButton.style.display = "none";
+    window.removeDirection();
   }
 }
 

@@ -3,7 +3,10 @@ var centreLong;
 var map;
 var marker;
 const locationMap = new Map();
-
+var directionsRenderer;
+var directionsService;
+var userLat;
+var userLong;
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
 // console.log(currentLocationToLoad)
 
@@ -113,31 +116,40 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function getDirection(lastMarkerLat,lastMarkerLong){
-  const directionsRenderer = new google.maps.DirectionsRenderer();
-  const directionsService = new google.maps.DirectionsService();
-  const whereTo = google.maps.LatLng(
-    parseFloat(lastMarkerLat),
-    parseFloat(lastMarkerLong)
-  ); 
-  directionsRenderer.setMap(map);
-  directionsService.route({
-    origin:getUserLocation(),
-    destination:whereTo,
-    travelMode: 'WALKING' 
-  })
-  .then((response)=>{
-    directionsRenderer.setDirections(response);
-  })
-}
+  if (navigator.geolocation) {
+    function success(position) {
+      userLat = position.coords.latitude;
+      userLong = position.coords.longitude;
+      console.log(`Latitude: ${userLat}, Longitude: ${userLong}`);
+  
+      directionsRenderer = new google.maps.DirectionsRenderer();
+      directionsService = new google.maps.DirectionsService();
 
-function getUserLocation(){
-  if(navigator.geolocation){
-    const position = navigator.geolocation.getCurrentPosition()
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-    return google.maps.LatLng(latitude,longitude);
-  }
-  else{
+      directionsRenderer.setMap(map);
+      directionsService.route({
+        origin: { lat: userLat, lng: userLong },
+        destination: { lat: lastMarkerLat, lng: lastMarkerLong },
+        travelMode: 'WALKING'
+      })
+        .then((response) => {
+          directionsRenderer.setDirections(response);
+        })
+        .catch((e) => window.alert("Directions request failed due to " + e));
+    }
+  
+    function error(err) {
+      console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
+  
+    navigator.geolocation.getCurrentPosition(success, error);
+  } 
+  else {
     console.error("User position not available");
   }
+}
+
+function removeDirection(){
+  directionsRenderer.set('directions', null);
+  map.panTo({ lat: userLat, lng: userLong });
+  map.setZoom(zoom);
 }
