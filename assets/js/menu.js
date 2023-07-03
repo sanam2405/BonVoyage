@@ -107,10 +107,17 @@ function createHTML() {
     // Check if the selected item exists
               if (selectedItem) {
                 // Update the placard content dynamically
-                var placardDetailsDiv = document.querySelector(".info");
+                var placardDetailsDiv = document.querySelector(".name-section");
+                var placardInfoDiv = document.querySelector(".info");
+
                 placardDetailsDiv.innerHTML = Object.entries(selectedItem.description)
                   .map(([key, value]) => `<p><strong>${key}:</strong> ${formatValue(value)}</p>`)
                   .join('\n');
+
+                placardInfoDiv.innerHTML = Object.entries(selectedItem.info)
+                  .map(([key, value]) => `<p><strong>${key}:</strong> ${formatValue(value)}</p>`)
+                  .join('\n');
+                  
               } else {
                 console.log(`Selected item not found in the data`);
               }

@@ -5,10 +5,10 @@
         "description": {
             "name": "Zebra",
             "className": "Mammal",
-            "scientificName": "Equus zebra",
-            "age": 6,
-            "gender": "male",
-            "link":""
+            "scientificName": "Equus zebra"
+        },
+        "info":{
+            "age": "Lorem ipsum dolor sit amet consectetur adipisicing elit Maxime mollitia molestiae quas ve int commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio eaque rerum Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt"
         },
         "location": {
             "latitude": 22.535464,
@@ -22,9 +22,9 @@
         "description": {
             "name": "Bear",
             "className": "Mammal",
-            "scientificName": "Melursus ursinus",
-            "age": 14,
-            "gender": "female"
+            "scientificName": "Melursus ursinus"
+        },
+        "info":{
         },
         "location": {
             "latitude": 22.534778,
