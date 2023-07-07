@@ -1,7 +1,7 @@
 var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
-var currentLocationToLoad = localStorage.getItem('currentLocationValue');
+var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
 // console.log(currentLocationToLoad)
 
 const jsonPath = `./assets/js/${currentLocationToLoad}.json`;
@@ -54,7 +54,7 @@ function shiftMarker() {
 }
 
 //------------------------------------------------
-
+let itemSelected;
 // Function to create the HTML code
 function createHTML() {
   var container = document.getElementById("container");
@@ -104,23 +104,37 @@ function createHTML() {
               // Find the selected item in the data
               const selectedItem = data.find(item => item.description.name === subItem);
 
+              itemSelected=selectedItem;
+
     // Check if the selected item exists
               if (selectedItem) {
                 // Update the placard content dynamically
                 var placardDetailsDiv = document.querySelector(".name-section");
                 var placardInfoDiv = document.querySelector(".info");
+                var imgDiv = document.querySelector(".picture-section");
+
+                var imgElement = document.createElement("img");
+                imgElement.src = selectedItem.img;
+                imgElement.alt = selectedItem.description.name;
+                
+                // Clear the imgDiv before adding the new image
+                imgDiv.innerHTML = "";
+                
+                // Append the imgElement to the imgDiv
+                imgDiv.appendChild(imgElement);
 
                 placardDetailsDiv.innerHTML = Object.entries(selectedItem.description)
-                  .map(([key, value]) => `<p><strong>${key}:</strong> ${formatValue(value)}</p>`)
+                  .map(([key, value]) => `<h2>${formatValue(value)}</h2>`)
                   .join('\n');
 
                 placardInfoDiv.innerHTML = Object.entries(selectedItem.info)
-                  .map(([key, value]) => `<p><strong>${key}:</strong> ${formatValue(value)}</p>`)
+                  .map(([key, value]) => `<p><strong><i>${formatValue(value)}</p>`)
                   .join('\n');
                   
               } else {
                 console.log(`Selected item not found in the data`);
               }
+              console.log(itemSelected);
             })
             .catch(error => {
               console.error('Error:', error);
@@ -247,16 +261,20 @@ menuButton.addEventListener('click', () => {
 });
 
 
+
 placard.addEventListener('click', (event) => {
   const clickedElement = event.target;
   if (clickedElement.id === 'exitBtn') {
     hidePlacard();
     hideGoButton();
     window.removeMarker();
-  }
-
-  if (clickedElement.id === 'maximizeBtn') {
-    window.open('${selectedItem.description.link}', '_blank');
+  }else if(clickedElement.id === 'maximizeBtn'){
+    fetch(jsonPath)
+            .then(response => response.json())
+            .then(data => {
+              window.open(itemSelected.link,"_blank")
+              console.log(itemSelected);
+            })
   }
 });
 

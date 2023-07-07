@@ -1,11 +1,10 @@
-var currentLocation = localStorage.getItem('currentLocationValue');
+var currentLocation = sessionStorage.getItem('currentLocationValue');
 
 const dropdownPlaces = document.querySelector('.dropdownPlaces');
 
 // Event listener to store the selected value in session storage
 
 if (dropdownPlaces != null) {
-
   dropdownPlaces.addEventListener('change', function () {
 
     currentLocation = dropdownPlaces.value;
@@ -15,7 +14,7 @@ if (dropdownPlaces != null) {
       currentLocation = "ju";
     }
 
-    localStorage.setItem('currentLocationValue', currentLocation);
+    sessionStorage.setItem('currentLocationValue', currentLocation);
   });
 }
 
