@@ -8,8 +8,8 @@ var directionsService;
 var userLat;
 var userLong;
 var directionResponse;
-var currentLocationToLoad = localStorage.getItem('currentLocationValue');
-// console.log(currentLocationToLoad)
+var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
+
 
 
 function populateMap(currentLocationToLoad) {

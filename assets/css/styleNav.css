@@ -290,6 +290,8 @@ option {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  width: 570px;
+  height: 164px;
 }
 
 
@@ -297,9 +299,6 @@ option {
   width: 70%;
 }
 
-.name-section h2 {
-  margin: 0;
-}
 
 .picture-section {
   width: 30%;
@@ -307,6 +306,8 @@ option {
   position: absolute;
   top: 0;
   right: 0;
+  width: 10rem; 
+  height: 10rem;
   background-color: #ccc;
   margin: 0.625rem;
 }
@@ -404,7 +405,6 @@ option {
   padding: 0.625rem;
   font-family: var(--font-comic-neue);
   font-size: var(--font-size-small);
-  /* z-index: 99999; */
 }
 
 /* Mobile Styles */
@@ -438,8 +438,6 @@ option {
   .sub-dropdown {
     display: none;
     position: absolute;
-    /* top: 0;
-      left: 100%; */
     z-index: 99999;
     color: #ed786a;
     border: 0.125rem solid black;
