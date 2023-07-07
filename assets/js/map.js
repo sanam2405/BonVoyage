@@ -9,7 +9,7 @@ var userLat;
 var userLong;
 var directionResponse;
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
-// console.log(currentLocationToLoad)
+
 
 
 function populateMap(currentLocationToLoad) {

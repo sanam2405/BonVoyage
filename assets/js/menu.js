@@ -2,7 +2,6 @@ var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
-// console.log(currentLocationToLoad)
 
 const jsonPath = `./assets/js/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
@@ -10,7 +9,6 @@ fetch(jsonPath)
   .then(response => response.json())
   .then(data => {
 
-    // console.log(data);
     // Clear existing menuItems
     menuItems.length = 0;
 
@@ -106,7 +104,7 @@ function createHTML() {
 
               itemSelected=selectedItem;
 
-    // Check if the selected item exists
+              // Check if the selected item exists
               if (selectedItem) {
                 // Update the placard content dynamically
                 var placardDetailsDiv = document.querySelector(".name-section");
