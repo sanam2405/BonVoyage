@@ -94,7 +94,7 @@ function createHTML() {
             window.addMarker(latitude, longitude, subItem);
             lastMarkerLat = latitude;
             lastMarkerLong= longitude;
-            console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+            // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
 
             fetch(jsonPath)
             .then(response => response.json())
@@ -132,7 +132,7 @@ function createHTML() {
               } else {
                 console.log(`Selected item not found in the data`);
               }
-              console.log(itemSelected);
+              // console.log(itemSelected);
             })
             .catch(error => {
               console.error('Error:', error);
@@ -253,7 +253,7 @@ menuButton.addEventListener('click', () => {
   hideGoButtonAlways();
   window.removeMarker();
   goButton.textContent = "Let's Walk";
-  if (directionResponse.status === 'OK') {
+  if (window.directionResponse === 'OK') {
     removeDirection();
   }
 });
