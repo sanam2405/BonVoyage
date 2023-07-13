@@ -1,1 +1,3 @@
 node_modules/
+assets/secrets/
+.DS_Store

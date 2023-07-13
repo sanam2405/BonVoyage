@@ -2,6 +2,7 @@ var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
+let isHTMLCreated = false;
 
 const jsonPath = `js/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
@@ -55,6 +56,7 @@ function shiftMarker() {
 let itemSelected;
 // Function to create the HTML code
 function createHTML() {
+  isHTMLCreated = true;
   var container = document.getElementById("container");
 
   // Create the <ul> element with class "dropdown"
@@ -167,24 +169,16 @@ function createHTML() {
 
   // Append the <ul> element to the container
   container.appendChild(dropdown);
-  toggleDropdown();
 }
 
-// Add click event listener to the createButton
-var createButton = document.querySelector('.menu');
-createButton.addEventListener("click", createHTML);
-
-//toggle dropdown list function
 
 function toggleDropdown() {
   var dropdown = document.querySelector(".dropdown");
-  if (dropdown != null) {
     if (dropdown.style.display === "none") {
       dropdown.style.display = "block";
     } else {
       dropdown.style.display = "none";
     }
-  }
 }
 
 
@@ -205,11 +199,7 @@ let exitButton = document.querySelector("#exitBtn")
 let maximizeButton = document.querySelector("#maximizeBtn")
 
 
-function hideDropdown() {
-  if (dropdown != null) {
-    dropdown.style.display = "none";
-  }
-}
+
 
 
 // -----------------------------------------------------------------
@@ -249,6 +239,12 @@ function hideGoButtonAlways() {
 }
 
 menuButton.addEventListener('click', () => {
+
+  if(isHTMLCreated===false) {
+    createHTML();
+  }
+
+  toggleDropdown();
   hidePlacardAlways();
   hideGoButtonAlways();
   window.removeMarker();
@@ -312,4 +308,5 @@ avatarButton.addEventListener('click', () => {
 window.onload = function () {
   var button = document.querySelector('.menu');
   button.click();
+  dropdown.style.display = "none";
 };
