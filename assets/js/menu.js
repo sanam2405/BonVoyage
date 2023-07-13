@@ -308,5 +308,6 @@ avatarButton.addEventListener('click', () => {
 window.onload = function () {
   var button = document.querySelector('.menu');
   button.click();
+  if(dropdown!=null)
   dropdown.style.display = "none";
 };
