@@ -318,8 +318,6 @@ goButton.addEventListener('click', () => {
 });
 
 avatarButton.addEventListener('click', () => {
-    isHTMLCreated = false;
-    sessionStorage.setItem('isHTMLCreated', JSON.stringify(isHTMLCreated));
   window.location.href = '/';
 });
 
@@ -329,3 +327,10 @@ window.onload = function () {
   if(dropdown!=null)
   dropdown.style.display = "none";
 };
+
+// Adding a listener for the "beforeunload" event
+window.addEventListener('beforeunload', function(event) {
+  isHTMLCreated = false;
+  sessionStorage.setItem('isHTMLCreated', JSON.stringify(isHTMLCreated));
+  // event.returnValue = 'Your custom message goes here.';
+});
