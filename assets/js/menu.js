@@ -2,7 +2,13 @@ var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
-let isHTMLCreated = false;
+var isHTMLCreated = sessionStorage.getItem('isHTMLCreated');
+// Checking if the variable already exists in session storage
+if (sessionStorage.getItem('isHTMLCreated') === null) {
+  // If it doesn't exist, initialize it with false
+  isHTMLCreated = false;
+  sessionStorage.setItem('isHTMLCreated', false);
+}
 
 const jsonPath = `js/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
@@ -57,6 +63,7 @@ let itemSelected;
 // Function to create the HTML code
 function createHTML() {
   isHTMLCreated = true;
+  sessionStorage.setItem('isHTMLCreated', isHTMLCreated);
   var container = document.getElementById("container");
 
   // Create the <ul> element with class "dropdown"
@@ -246,9 +253,13 @@ function hideGoButtonAlways() {
 
 menuButton.addEventListener('click', () => {
 
-  // if(isHTMLCreated===false) {
-  //   createHTML();
-  // }
+  
+  // Retrieving the variable from session storage
+  var isHTMLCreated = sessionStorage.getItem('isHTMLCreated');
+  if(isHTMLCreated===false) {
+    createHTML();
+  }
+
 
   toggleDropdown();
   hidePlacardAlways();
