@@ -62,6 +62,7 @@ function createHTML() {
   // Create the <ul> element with class "dropdown"
   var dropdown = document.createElement("ul");
   dropdown.className = "dropdown";
+  dropdown.style.display = "none";
 
   // Iterate through the menuItems list
   menuItems.forEach(function (menuItem) {
@@ -174,11 +175,16 @@ function createHTML() {
 
 function toggleDropdown() {
   var dropdown = document.querySelector(".dropdown");
+
+  if(dropdown!=null) {
     if (dropdown.style.display === "none") {
       dropdown.style.display = "block";
     } else {
       dropdown.style.display = "none";
     }
+  } else {
+    dropdown.style.display = "none";
+  }
 }
 
 
@@ -306,9 +312,10 @@ avatarButton.addEventListener('click', () => {
 // ----------------------------------------------------------------
 
 window.onload = function () {
-  var button = document.querySelector('.menu');
-  button.click();
+  // var button = document.querySelector('.menu');
+  // button.click();
+  // button.click();
+  createHTML();
   if(dropdown!=null)
   dropdown.style.display = "none";
-  createHTML();
 };
