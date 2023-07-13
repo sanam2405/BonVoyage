@@ -11,7 +11,7 @@ if (sessionStorage.getItem('isHTMLCreated') === null) {
 // Retrieving the variable from session storage
 var isHTMLCreated = JSON.parse(sessionStorage.getItem('isHTMLCreated'));
 
-const jsonPath = `js/${currentLocationToLoad}.json`;
+const jsonPath = `../json/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
 fetch(jsonPath)
   .then(response => response.json())
@@ -135,7 +135,7 @@ function createHTML() {
                   .join('\n');
 
                 placardInfoDiv.innerHTML = Object.entries(selectedItem.info)
-                  .map(([key, value]) => `<p><strong><i>${formatValue(value)}</p>`)
+                  .map(([key, value]) => `<p><strong>${formatValue(value)}</p>`)
                   .join('\n');
                   
               } else {
@@ -318,8 +318,6 @@ goButton.addEventListener('click', () => {
 });
 
 avatarButton.addEventListener('click', () => {
-    isHTMLCreated = false;
-    sessionStorage.setItem('isHTMLCreated', JSON.stringify(isHTMLCreated));
   window.location.href = '/';
 });
 
@@ -329,3 +327,10 @@ window.onload = function () {
   if(dropdown!=null)
   dropdown.style.display = "none";
 };
+
+// Adding a listener for the "beforeunload" event
+window.addEventListener('beforeunload', function(event) {
+  isHTMLCreated = false;
+  sessionStorage.setItem('isHTMLCreated', JSON.stringify(isHTMLCreated));
+  // event.returnValue = 'Your custom message goes here.';
+});
