@@ -240,9 +240,9 @@ function hideGoButtonAlways() {
 
 menuButton.addEventListener('click', () => {
 
-  if(isHTMLCreated===false) {
-    createHTML();
-  }
+  // if(isHTMLCreated===false) {
+  //   createHTML();
+  // }
 
   toggleDropdown();
   hidePlacardAlways();
@@ -310,4 +310,5 @@ window.onload = function () {
   button.click();
   if(dropdown!=null)
   dropdown.style.display = "none";
+  createHTML();
 };
