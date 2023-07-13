@@ -14,7 +14,7 @@ var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
 
 
 function populateMap(currentLocationToLoad) {
-  const jsonPath = `./assets/js/${currentLocationToLoad}.json`;
+  const jsonPath = `js/${currentLocationToLoad}.json`;
 
   fetch(jsonPath)
     .then(response => response.json())
@@ -76,7 +76,7 @@ function removeMarker() {
 let centreLatitude, centreLongitude, zoom;
 
 function loadMap() {
-  fetch('./assets/js/location.json')
+  fetch('js/location.json')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {

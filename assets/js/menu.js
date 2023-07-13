@@ -3,7 +3,7 @@ var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
 
-const jsonPath = `./assets/js/${currentLocationToLoad}.json`;
+const jsonPath = `js/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
 fetch(jsonPath)
   .then(response => response.json())
@@ -304,7 +304,7 @@ goButton.addEventListener('click', () => {
 });
 
 avatarButton.addEventListener('click', () => {
-  window.location.href = 'index.html';
+  window.location.href = '/';
 });
 
 // ----------------------------------------------------------------
