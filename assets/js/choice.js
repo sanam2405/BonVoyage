@@ -37,7 +37,7 @@ const selectElement = document.getElementById('placesSelect');
 if(selectElement != null) {
 
   // Populate the select element with options from the JSON data
-  fetch('js/location.json')
+  fetch('../json/location.json')
     .then(response => response.json())
     .then(jsonData => {
       // Populate the select element with options from the JSON data

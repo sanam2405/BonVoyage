@@ -11,7 +11,7 @@ if (sessionStorage.getItem('isHTMLCreated') === null) {
 // Retrieving the variable from session storage
 var isHTMLCreated = JSON.parse(sessionStorage.getItem('isHTMLCreated'));
 
-const jsonPath = `js/${currentLocationToLoad}.json`;
+const jsonPath = `../json/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
 fetch(jsonPath)
   .then(response => response.json())
