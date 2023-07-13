@@ -5,7 +5,6 @@ const dropdownPlaces = document.querySelector('.dropdownPlaces');
 // Event listener to store the selected value in session storage
 
 if (dropdownPlaces != null) {
-
   dropdownPlaces.addEventListener('change', function () {
 
     currentLocation = dropdownPlaces.value;
