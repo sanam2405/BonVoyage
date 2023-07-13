@@ -326,10 +326,6 @@ avatarButton.addEventListener('click', () => {
 // ----------------------------------------------------------------
 
 window.onload = function () {
-  // var button = document.querySelector('.menu');
-  // button.click();
-  // button.click();
-  // createHTML();
   if(dropdown!=null)
   dropdown.style.display = "none";
 };
