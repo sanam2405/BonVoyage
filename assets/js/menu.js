@@ -2,13 +2,15 @@ var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
-var isHTMLCreated = sessionStorage.getItem('isHTMLCreated');
 // Checking if the variable already exists in session storage
 if (sessionStorage.getItem('isHTMLCreated') === null) {
   // If it doesn't exist, initialize it with false
-  isHTMLCreated = false;
   sessionStorage.setItem('isHTMLCreated', false);
 }
+
+// Retrieving the variable from session storage
+var isHTMLCreated = JSON.parse(sessionStorage.getItem('isHTMLCreated'));
+
 
 const jsonPath = `js/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
@@ -62,8 +64,6 @@ function shiftMarker() {
 let itemSelected;
 // Function to create the HTML code
 function createHTML() {
-  isHTMLCreated = true;
-  sessionStorage.setItem('isHTMLCreated', isHTMLCreated);
   var container = document.getElementById("container");
 
   // Create the <ul> element with class "dropdown"
@@ -189,9 +189,7 @@ function toggleDropdown() {
     } else {
       dropdown.style.display = "none";
     }
-  } else {
-    dropdown.style.display = "none";
-  }
+  } 
 }
 
 
@@ -254,9 +252,13 @@ function hideGoButtonAlways() {
 menuButton.addEventListener('click', () => {
 
   
-  // Retrieving the variable from session storage
-  var isHTMLCreated = sessionStorage.getItem('isHTMLCreated');
-  if(isHTMLCreated===false) {
+  // Checking if isHTMLCreated is false
+  if (isHTMLCreated === false) {
+    // Setting it to true and updating session storage
+    isHTMLCreated = true;
+    sessionStorage.setItem('isHTMLCreated', JSON.stringify(isHTMLCreated));
+
+    // Calling the createHTML() function
     createHTML();
   }
 
@@ -326,7 +328,7 @@ window.onload = function () {
   // var button = document.querySelector('.menu');
   // button.click();
   // button.click();
-  createHTML();
+  // createHTML();
   if(dropdown!=null)
   dropdown.style.display = "none";
 };
