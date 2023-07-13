@@ -135,7 +135,7 @@ function createHTML() {
                   .join('\n');
 
                 placardInfoDiv.innerHTML = Object.entries(selectedItem.info)
-                  .map(([key, value]) => `<p><strong><i>${formatValue(value)}</p>`)
+                  .map(([key, value]) => `<p><strong>${formatValue(value)}</p>`)
                   .join('\n');
                   
               } else {
