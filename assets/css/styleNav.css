@@ -290,8 +290,7 @@ option {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  width: 570px;
-  height: 164px; 
+  /* height: 165px;  */
 }
 
 
@@ -682,7 +681,7 @@ option {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    height: 164px;
+    height: 10.31rem;
   }
   
   
