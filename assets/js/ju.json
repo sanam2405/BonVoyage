@@ -357,5 +357,53 @@
             "longitude": 88.372219,
             "iconType": "zebra"
         }
+    },
+    {
+        "_id": 30,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 1"
+        },
+        "location": {
+            "latitude": 22.496084,
+            "longitude": 88.372511,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 31,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 2"
+        },
+        "location": {
+            "latitude": 22.495833,
+            "longitude": 88.370895,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 32,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 3"
+        },
+        "location": {
+            "latitude": 22.498096,
+            "longitude": 88.370315,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 33,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 4"
+        },
+        "location": {
+            "latitude": 22.499807,
+            "longitude": 88.369478,
+            "iconType": "zebra"
+        }
     }
 ]

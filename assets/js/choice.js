@@ -5,7 +5,6 @@ const dropdownPlaces = document.querySelector('.dropdownPlaces');
 // Event listener to store the selected value in session storage
 
 if (dropdownPlaces != null) {
-
   dropdownPlaces.addEventListener('change', function () {
 
     currentLocation = dropdownPlaces.value;
@@ -28,7 +27,7 @@ if (letsGoButton != null) {
     if (dropdownPlaces.value != "placeholder") {
 
       // Load the navigation.html page
-      window.location.href = 'navigation.html';
+      window.location.href = '/navigation';
     }
   });
 }
@@ -38,7 +37,7 @@ const selectElement = document.getElementById('placesSelect');
 if(selectElement != null) {
 
   // Populate the select element with options from the JSON data
-  fetch('./assets/js/location.json')
+  fetch('js/location.json')
     .then(response => response.json())
     .then(jsonData => {
       // Populate the select element with options from the JSON data
