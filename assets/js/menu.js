@@ -2,7 +2,14 @@ var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
-let isHTMLCreated = false;
+// Checking if the variable already exists in session storage
+if (sessionStorage.getItem('isHTMLCreated') === null) {
+  // If it doesn't exist, initialize it with false
+  sessionStorage.setItem('isHTMLCreated', false);
+}
+
+// Retrieving the variable from session storage
+var isHTMLCreated = JSON.parse(sessionStorage.getItem('isHTMLCreated'));
 
 const jsonPath = `js/${currentLocationToLoad}.json`;
 // Load and populate menuItems from zoo.json
@@ -56,12 +63,12 @@ function shiftMarker() {
 let itemSelected;
 // Function to create the HTML code
 function createHTML() {
-  isHTMLCreated = true;
   var container = document.getElementById("container");
 
   // Create the <ul> element with class "dropdown"
   var dropdown = document.createElement("ul");
   dropdown.className = "dropdown";
+  dropdown.style.display = "none";
 
   // Iterate through the menuItems list
   menuItems.forEach(function (menuItem) {
@@ -174,11 +181,14 @@ function createHTML() {
 
 function toggleDropdown() {
   var dropdown = document.querySelector(".dropdown");
+
+  if(dropdown!=null) {
     if (dropdown.style.display === "none") {
       dropdown.style.display = "block";
     } else {
       dropdown.style.display = "none";
     }
+  } 
 }
 
 
@@ -240,9 +250,17 @@ function hideGoButtonAlways() {
 
 menuButton.addEventListener('click', () => {
 
-  if(isHTMLCreated===false) {
+  
+  // Checking if isHTMLCreated is false
+  if (isHTMLCreated === false) {
+    // Setting it to true and updating session storage
+    isHTMLCreated = true;
+    sessionStorage.setItem('isHTMLCreated', JSON.stringify(isHTMLCreated));
+
+    // Calling the createHTML() function
     createHTML();
   }
+
 
   toggleDropdown();
   hidePlacardAlways();
@@ -300,13 +318,14 @@ goButton.addEventListener('click', () => {
 });
 
 avatarButton.addEventListener('click', () => {
+    isHTMLCreated = false;
+    sessionStorage.setItem('isHTMLCreated', JSON.stringify(isHTMLCreated));
   window.location.href = '/';
 });
 
 // ----------------------------------------------------------------
 
 window.onload = function () {
-  var button = document.querySelector('.menu');
-  button.click();
+  if(dropdown!=null)
   dropdown.style.display = "none";
 };
