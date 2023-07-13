@@ -63,7 +63,7 @@ function addMarker(latitude, longitude, title) {
     title: title
   });
 
-  marker.setMap(locationMap);
+  marker.setMap(map);
 }
 
 
@@ -117,6 +117,17 @@ document.addEventListener('DOMContentLoaded', function () {
   checkForGoogle();
 });
 
+const options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+
+
 // Update marker position with live user location
 function updateMarkerPosition() {
   if (navigator.geolocation) {
@@ -137,12 +148,12 @@ function updateMarkerPosition() {
         title: "Your Current Location"
       });
 
-      liveUserMarker.setMap(locationMap);
+      liveUserMarker.setMap(map);
 
 
       // liveUserMarker.setPosition(newPosition);
       // map.setCenter(position);
-    });
+    },error,options);
   } else {
     console.log("Geolocation is not supported by this browser.");
   }
