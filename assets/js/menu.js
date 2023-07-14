@@ -2,6 +2,13 @@ var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
+
+
+// Checking if the variable doesn't exist then sending user to index.html
+if(currentLocationToLoad === null) {
+  window.location.href = '/';
+}
+
 // Checking if the variable already exists in session storage
 if (sessionStorage.getItem('isHTMLCreated') === null) {
   // If it doesn't exist, initialize it with false
