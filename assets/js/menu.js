@@ -312,7 +312,7 @@ function changeToCancel() {
   } else {
     goButton.textContent = "Let's Walk";
     goButton.classList.remove('red-button');
-    window.removeMarker();
+    // window.removeMarker();
     goButton.style.display = "none";
     window.removeDirection();
   }
