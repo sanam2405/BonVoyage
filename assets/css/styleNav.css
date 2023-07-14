@@ -503,7 +503,7 @@ option {
     border-radius: 0.5048rem;
     z-index: 99999;
     height: fit-content;
-    width: 18rem;
+    width: 21rem;
     font-family: var(--font-comic-neue);
     background-color: rgba(225, 225, 225, 0.027);
     backdrop-filter: blur(0.0625rem);
@@ -552,11 +552,6 @@ option {
     height: 100%;
     object-fit: cover;
     border: solid black 0.1rem;
-  }
-  
-  .bottom-section {
-    padding-top: 10px;
-    border-top: 1px solid black;
   }
   
   .card-button {
@@ -610,7 +605,8 @@ option {
   }
   
   .bottom-section {
-    padding-top: 10px;
+    
+    padding-top: 0.01rem;
     border-top: 1px solid black;
     min-height: fit-content;
   }
