@@ -284,6 +284,7 @@ placard.addEventListener('click', (event) => {
     fetch(jsonPath)
             .then(response => response.json())
             .then(data => {
+              if(itemSelected.link!="")
               window.open(itemSelected.link,"_blank")
               console.log(itemSelected);
             })
