@@ -473,18 +473,30 @@ option {
   }
 
   .dropdown {
-    width: 10rem;
+    width: 7rem;
+    min-height: 5rem;
   }
 
   .dropdown-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .sub-dropdown-item{
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .sub-dropdown {
+    max-height: 8rem;
+    min-width: 7.5rem;
   }
 
   .placard {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0.5rem;
@@ -574,7 +586,7 @@ option {
   }
 
   .name-section h2{
-    font-size: 1rem;
+    font-size: 0.93rem;
   }
   
   
