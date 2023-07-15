@@ -2,6 +2,13 @@ var menuItems = [];
 var lastMarkerLat;
 var lastMarkerLong; 
 var currentLocationToLoad = sessionStorage.getItem('currentLocationValue');
+
+
+// Checking if the variable doesn't exist then sending user to index.html
+if(currentLocationToLoad === null) {
+  window.location.href = '/';
+}
+
 // Checking if the variable already exists in session storage
 if (sessionStorage.getItem('isHTMLCreated') === null) {
   // If it doesn't exist, initialize it with false
@@ -284,6 +291,7 @@ placard.addEventListener('click', (event) => {
     fetch(jsonPath)
             .then(response => response.json())
             .then(data => {
+              if(itemSelected.link!="")
               window.open(itemSelected.link,"_blank")
               console.log(itemSelected);
             })
@@ -304,7 +312,7 @@ function changeToCancel() {
   } else {
     goButton.textContent = "Let's Walk";
     goButton.classList.remove('red-button');
-    window.removeMarker();
+    // window.removeMarker();
     goButton.style.display = "none";
     window.removeDirection();
   }

@@ -19,17 +19,7 @@
           "zoom": 18.25
        }
       
-    },
-
-    {
-      "_id": "bgarden",
-      "name": "Botanical Garden",
-      "location": {
-          "latitude": 22.559228,
-          "longitude": 88.290489,
-          "zoom": 17
-       }
-      
     }
-    
-]
+   ]
+
+   

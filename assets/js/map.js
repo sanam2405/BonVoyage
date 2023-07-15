@@ -171,7 +171,7 @@ function getDirection(lastMarkerLat, lastMarkerLong) {
       userLong = position.coords.longitude;
       // console.log(`Latitude: ${userLat}, Longitude: ${userLong}`);
       navigateUser();
-      directionsRenderer = new google.maps.DirectionsRenderer();
+      directionsRenderer = new google.maps.DirectionsRenderer({suppressMarkers: true});
       directionsService = new google.maps.DirectionsService();
 
       directionsRenderer.setMap(map);

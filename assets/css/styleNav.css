@@ -473,25 +473,37 @@ option {
   }
 
   .dropdown {
-    width: 10rem;
+    width: 7rem;
+    min-height: 5rem;
   }
 
   .dropdown-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .sub-dropdown-item{
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  .sub-dropdown {
+    max-height: 8rem;
+    min-width: 7.5rem;
   }
 
   .placard {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0.5rem;
     border-radius: 0.5048rem;
     z-index: 99999;
     height: fit-content;
-    width: 18rem;
+    width: 21rem;
     font-family: var(--font-comic-neue);
     background-color: rgba(225, 225, 225, 0.027);
     backdrop-filter: blur(0.0625rem);
@@ -542,11 +554,6 @@ option {
     border: solid black 0.1rem;
   }
   
-  .bottom-section {
-    padding-top: 10px;
-    border-top: 1px solid black;
-  }
-  
   .card-button {
     margin-right: 0.3125rem;
     padding: 0.3125rem;
@@ -574,7 +581,7 @@ option {
   }
 
   .name-section h2{
-    font-size: 1rem;
+    font-size: 0.93rem;
   }
   
   
@@ -598,7 +605,8 @@ option {
   }
   
   .bottom-section {
-    padding-top: 10px;
+    
+    padding-top: 0.01rem;
     border-top: 1px solid black;
     min-height: fit-content;
   }
