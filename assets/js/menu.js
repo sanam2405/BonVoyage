@@ -269,12 +269,12 @@ menuButton.addEventListener('click', () => {
   }
 
 
-  toggleDropdown();
+  toggleDropdown(); 
   hidePlacardAlways();
-  hideGoButtonAlways();
+  hideGoButtonAlways(); 
   window.removeMarker();
-  goButton.textContent = "Let's Walk";
-  if (window.directionResponse === 'OK') {
+  goButton.textContent = "Let's Walk"; 
+  if (window.directionResponse.status === 'OK') {
     removeDirection();
   }
 });
