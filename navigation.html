@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Indie Flower:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Comic Neue:wght@400&display=swap"
-    />
-    <link rel="stylesheet" href="css/styleNav.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <title>BonVoyage</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="navBar">
-        <div id="container">
-          <button class="menu">Menu</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie Flower:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic Neue:wght@400&display=swap" />
+  <link rel="stylesheet" href="css/styleNav.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <title>BonVoyage</title>
+</head>
 
-        <div class="heading">
-          <h1>BonVoyage</h1>
-        </div>
-
-        <div>
-          <button class="avatar">Avatar</button>
-        </div>
+<body>
+  <div class="container">
+    <div class="navBar">
+      <div id="container">
+        <button class="menu">Menu</button>
       </div>
 
-      <div class="footer">
-        <button class="go">Let's Walk</button>
+      <div class="heading">
+        <h1>BonVoyage</h1>
       </div>
 
-      <div id="map"></div>
-      <div class="placard">
-        <div class="button-group">
-          <button class="card-button" id="exitBtn"></button>
-          <button class="card-button" id="dummyBtn"></button>
-          <button class="card-button" id="maximizeBtn"></button>
-        </div>
-        <div class="top-section">
-          <div class="name-section">
-          </div>
-          <div class="picture-section">
-            <img src="https://images.unsplash.com/photo-1526095179574-86e545346ae6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" />
-          </div>
-        </div>
-        <div class="bottom-section">
-          <div class="info">
-          </div>
-        </div>
+      <div>
+        <button class="avatar">Back</button>
       </div>
-      
     </div>
 
-    <!-- Include the Google Maps JavaScript API -->
-    <script src="js/choice.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/map.js"></script>
+    <div class="footer">
+      <button class="go">Let's Walk</button>
+    </div>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD54BYQb6R6YCYGf_dQOJ-s0VF2jtPW2dk&callback=initMap"
-      async
-      defer
-    ></script>
-  </body>
+    <div id="map"></div>
+    <div class="placard">
+      <div class="button-group">
+        <button class="card-button" id="exitBtn"></button>
+        <button class="card-button" id="dummyBtn"></button>
+        <button class="card-button" id="maximizeBtn"></button>
+      </div>
+      <div class="top-section">
+        <div class="name-section">
+        </div>
+        <div class="picture-section">
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="info">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Include the Google Maps JavaScript API -->
+  <script src="js/choice.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/map.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD54BYQb6R6YCYGf_dQOJ-s0VF2jtPW2dk&callback=initMap"
+    async defer></script>
+</body>
+
 </html>
