@@ -9,15 +9,106 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic Neue:wght@400&display=swap" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
     <title>BonVoyage</title>
 </head>
 
 <body>
+
+    <div class="alert-box">
+        <p class="alert">msg</p>
+    </div>
+
     <div class="container">
         <div class="navBar">
-            <!-- <button class="signUp">Sign Up</button>
-            <button class="signIn">Sign In</button> -->
+            <!-- <button class="signUp">Sign Up</button> -->
+            <button class="signIn" id="form_open">Sign In</button>
         </div>
+
+        <section class="home">
+            <div class="form_container">
+                <i class="uil uil-times form_close"></i>
+                <!-- Login Form -->
+                <div class="form login_form">
+                    <form action="/" method="post">
+                        <h2>Login</h2>
+
+                        <input type="hidden" name="formValue" value="form1"/>
+
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" name="email1" required/>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Enter your password" name="password1" required/>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+    
+                        <!-- <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+                            </span>
+                            <a href="#" class="forgot_pw">Forgot_password</a>
+                        </div> -->
+    
+                        <button class="button" id="logInNow">Login Now</button>
+    
+                        <div class="login_signup">
+                            Don't have an account? <a href="#" id="signup">Sign Up</a>
+                        </div>
+    
+                    </form>
+                </div>
+                
+                
+                <!-- Signup Form -->
+                <div class="form signup_form">
+                    <form action="/" method="post">
+                        <h2>SignUp</h2>
+                       
+                        <input type="hidden" name="formValue" value="form2"/>
+                    
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" name="email" required/>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Enter your username" name="username" required/>
+                            <i class="uil uil-user user"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Create password" name="password" required/>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirm password" name="confirmpassword" required/>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+    
+                        <!-- <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+                            </span>
+                            <a href="#" class="forgot_pw">Forgot_password</a>
+                        </div> -->
+    
+                        <button class="button" id="signUpNow">SignUp Now</button>
+    
+                        <div class="login_signup">
+                            Already have an account? <a href="#" id="login">Login</a>
+                        </div>
+    
+                    </form>
+                </div>
+    
+            </div>
+        </section>
+        
 
         <div class="heading">
             <h1>BonVoyage</h1>
