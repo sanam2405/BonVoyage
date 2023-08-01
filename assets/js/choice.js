@@ -118,10 +118,17 @@ loginBtn.addEventListener("click", (e) => {
       // If login is successful, store the user data in local storage
       localStorage.setItem("userData", JSON.stringify(data));
       // Redirect to the dashboard page with the username
-      window.location.href = `/dashboard?username=${data.username}`;
+      location.href = `/dashboard?username=${data.username}`;
     } else {
       // If login fails, display the error message
-      alert(data);
+      const alertContainer = document.querySelector('.alert-box');
+      const alertMsg = document.querySelector('.alert');
+      alertMsg.innerHTML = data;
+
+      alertContainer.style.top = `5%`;
+      setTimeout(() => {
+          alertContainer.style.top = `-100%`;
+      }, 2000);
     }
   };
 
@@ -159,7 +166,7 @@ const handleSignupForm = async (event) => {
   alertContainer.style.top = `5%`;
   setTimeout(() => {
       alertContainer.style.top = `-100%`;
-  }, 5000);
+  }, 2000);
 };
 
 // Add event listeners to the login and signup forms
