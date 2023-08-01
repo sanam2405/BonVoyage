@@ -8,24 +8,6 @@
 <body>
   <h1>Welcome to the Dashboard</h1>
   <div id="usernameContainer"></div>
-
-  <script>
-    // Function to get query parameters from the URL
-    const getQueryParam = (name) => {
-      const params = new URLSearchParams(window.location.search);
-      return params.get(name);
-    };
-
-    // Retrieve the username from the query parameter
-    const username = getQueryParam("username");
-
-    // Display the username on the page
-    const usernameContainer = document.getElementById("usernameContainer");
-    if (username) {
-      usernameContainer.textContent = `Hello, ${username}!`;
-    } else {
-      usernameContainer.textContent = "Username not found.";
-    }
-  </script>
+  <script src="js/dashboard.js"></script>
 </body>
 </html>
