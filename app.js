@@ -22,55 +22,68 @@ app.get('/', (req, res) => {
 });
 
 app.post('/',async(req,res)=>{
-  try{
-
+  
     formvalue=req.body.formValue;
 
     if(formvalue==="form1"){
-      const email = req.body.email1;
-      const password = req.body.password1;
+      try{
 
-      const useremail = await Register.findOne({email:email});
+        const email = req.body.email;
+        const password = req.body.password;
 
-      const isMatch = await bcrypt.compare(password,useremail.password);
+        const userMatch = await Register.findOne({email:email});
 
-      if(isMatch){
-        res.status(201).send("success");
-      }else{
-        res.send("Invalid Credentials");
+        if (!userMatch) {
+          return res.json("Invalid Credentials");
+        }
+
+        const isMatch = await bcrypt.compare(password,userMatch.password);
+
+        if(isMatch){
+          res.status(201).json(userMatch);
+        }else{
+          res.status(400).json("Invalid Credentials");
+        }
+
+      }catch (error){
+        console.log(error);
       }
-
     }
-
     else if(formvalue==="form2"){
 
-      const password = req.body.password;
-      const cpassword = req.body.confirmpassword;
+      try{
 
-      if(password===cpassword){
+        const password = req.body.password;
+        const cpassword = req.body.confirmpassword;
 
-        const registerUser = new Register({
-          email : req.body.email,
-          username : req.body.username,
-          password : req.body.password,
-          confirmpassword : req.body.confirmpassword
-        })
+        if(password===cpassword){
 
-        const registered= await registerUser.save();
-        res.sendFile(__dirname+'/index.html');
+          const registerUser = new Register({
+            email : req.body.email,
+            username : req.body.username,
+            password : req.body.password,
+            confirmpassword : req.body.confirmpassword
+          })
 
-      }else{
-        res.send("passwords are not matching");
+          const registered= await registerUser.save();
+          res.json('Registration Done!');
+
+        }else{
+          res.json('passwords are not matching');
+        }
+      }catch (error) {
+        res.json('Error! Already have an account');
       }
     }
+  })
 
-  } catch (error) {
-    res.status(400).send(error);
-  }
-})
 
 app.get('/navigation', (req, res) => {
   res.sendFile(__dirname + '/navigation.html');
+});
+
+app.get('/dashboard', (req, res) => {
+  res.sendFile(__dirname + '/dashboard.html');
 });
 
 // Starting the server

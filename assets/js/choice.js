@@ -87,3 +87,90 @@ loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formContainer.classList.remove("active");
 });
+
+
+
+  
+
+  // Send the login data to the server
+  const handleLoginForm = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const email = formData.get("email1");
+    const password = formData.get("password1");
+  
+    // Send the login data to the server
+    const response = await fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        formValue: "form1",
+        email,
+        password,
+      }),
+    });
+  
+    const data = await response.json();
+  
+    if (data.username) {
+      // If login is successful, store the user data in local storage
+      localStorage.setItem("userData", JSON.stringify(data));
+      // Redirect to the dashboard page with the username
+      window.location.href = `/dashboard?username=${data.username}`;
+    } else {
+      // If login fails, display the error message
+      alert(data);
+    }
+  };
+
+// Function to handle the signup form submission
+const handleSignupForm = async (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const email = formData.get("email");
+  const username = formData.get("username");
+  const password = formData.get("password");
+  const confirmpassword = formData.get("confirmpassword");
+
+  // Send the signup data to the server
+  const response = await fetch("/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      formValue: "form2",
+      email,
+      username,
+      password,
+      confirmpassword,
+    }),
+  });
+
+  const data = await response.json();
+
+  // Display the response message in the alert-box div
+  const alertContainer = document.querySelector('.alert-box');
+  const alertMsg = document.querySelector('.alert');
+  alertMsg.innerHTML = data;
+
+  alertContainer.style.top = `5%`;
+  setTimeout(() => {
+      alertContainer.style.top = `-100%`;
+  }, 5000);
+};
+
+// Add event listeners to the login and signup forms
+const loginForm = document.querySelector(".login_form form");
+const signupForm = document.querySelector(".signup_form form");
+
+if (loginForm) {
+  loginForm.addEventListener("submit", handleLoginForm);
+}
+
+if (signupForm) {
+  signupForm.addEventListener("submit", handleSignupForm);
+}
+
