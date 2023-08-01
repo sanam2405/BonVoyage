@@ -51,7 +51,7 @@ body {
 /* alert-box styles */
 .alert-box{
   position: absolute;
-  top: -100%;
+  top: -150%;
   left: 50%;
   transform: translateX(-50%);
   min-width: 400px;
@@ -232,7 +232,7 @@ body {
   font-family: var(--font-comic-neue);
 }
 
-.form_container .button{
+.form_container .submit-btn{
   background: white;
   color: #ed786a;
   border:  black solid 1px;
@@ -250,7 +250,7 @@ body {
   font-family: var(--font-comic-neue);
 }
 
-.button:hover{
+.submit-btn:hover{
   color: black;
   background-color: #ed786a;
   font-family: var(--font-comic-neue);
