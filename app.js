@@ -1,18 +1,21 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const bcrypt = require("bcryptjs");
+const cookieParser = require("cookie-parser");
 // const port = process.env.PORT || 3000;
 const port = 3000; // Choosing a port for your server
 require("./assets/db/conn");
 const Register = require("./assets/models/registration");
+const auth = require("./assets/middleware/auth");
 
 
 console.log(__dirname);
 
 // Serving static files from the 'assets' directory
 app.use(express.static('assets'));
-
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({extended:false}));
   
 
@@ -38,6 +41,14 @@ app.post('/',async(req,res)=>{
         }
 
         const isMatch = await bcrypt.compare(password,userMatch.password);
+
+        const token = await userMatch.generateAuthToken();
+        // console.log(userMatch.tokens[0].token);
+
+        res.cookie("jwt",token,{
+          expires:new Date(Date.now()+86400000),
+          httpOnly:true
+        });
 
         if(isMatch){
           res.status(201).json(userMatch);
@@ -65,6 +76,8 @@ app.post('/',async(req,res)=>{
             confirmpassword : req.body.confirmpassword
           })
 
+          // const token = await registerUser.generateAuthToken();
+
           const registered= await registerUser.save();
           res.json('Registration Done!');
 
@@ -82,9 +95,27 @@ app.get('/navigation', (req, res) => {
   res.sendFile(__dirname + '/navigation.html');
 });
 
-app.get('/dashboard', (req, res) => {
+app.get('/dashboard',auth, (req, res) => {
+  try{
   res.sendFile(__dirname + '/dashboard.html');
+  }catch(error){
+    res.alert(error);
+  }
 });
+
+app.get('/logout',auth,async (req,res)=>{
+  try{
+    // localStorage.removeItem("userdata");
+    req.user.tokens = req.user.tokens.filter((currElement)=>{
+      return currElement.token !== req.token;
+    })
+    res.clearCookie("jwt");
+    await req.user.save();
+    res.sendFile(__dirname + '/index.html');
+  }catch(error){
+    res.status(500).send(error);
+  }
+})
 
 // Starting the server
 app.listen(port, () => {

@@ -89,9 +89,6 @@ loginBtn.addEventListener("click", (e) => {
 });
 
 
-
-  
-
   // Send the login data to the server
   const handleLoginForm = async (event) => {
     event.preventDefault();
@@ -116,9 +113,9 @@ loginBtn.addEventListener("click", (e) => {
   
     if (data.username) {
       // If login is successful, store the user data in local storage
+      
       localStorage.setItem("userData", JSON.stringify(data));
-      // Redirect to the dashboard page with the username
-      location.href = `/dashboard?username=${data.username}`;
+      location.href = `/dashboard`;
     } else {
       // If login fails, display the error message
       const alertContainer = document.querySelector('.alert-box');
