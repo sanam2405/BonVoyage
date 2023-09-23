@@ -170,8 +170,8 @@
     },
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47NQ_BhC04IBOcJPyoACfTRJy9ejKL_-ysQ&usqp=CAU",
     "location": {
-      "latitude": 22.559965,
-      "longitude": 88.413117
+      "latitude": 22.559753,
+      "longitude": 88.412826
     }
   },
   {
@@ -186,15 +186,15 @@
     },
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47NQ_BhC04IBOcJPyoACfTRJy9ejKL_-ysQ&usqp=CAU",
     "location": {
-      "latitude": 22.559965,
-      "longitude": 88.413117
+        "latitude": 22.559965,
+        "longitude": 88.413117
     }
   },
   {
     "_id": 20,
     "category": "Gates",
     "description": {
-      "name": "Gate 1"
+      "name": "Main Gate"
     },
     "link": "https://jadavpuruniversity.in/",
     "info": {
@@ -202,8 +202,8 @@
     },
     "img": "https://pbs.twimg.com/media/E-rXUDWVcAgdjRA?format=jpg&name=4096x4096",
     "location": {
-      "latitude": 22.496084,
-      "longitude": 88.372511,
+      "latitude": 22.560338,
+      "longitude": 88.413661,
       "iconType": "zebra"
     }
   },
@@ -211,7 +211,7 @@
     "_id": 21,
     "category": "Gates",
     "description": {
-      "name": "Gate 2"
+      "name": "Boy's Hostel Gate"
     },
     "link": "https://jadavpuruniversity.in/",
     "info": {
@@ -219,8 +219,8 @@
     },
     "img": "https://pbs.twimg.com/media/E-rXUDWVcAgdjRA?format=jpg&name=4096x4096",
     "location": {
-      "latitude": 22.495833,
-      "longitude": 88.370895,
+      "latitude": 22.563154,
+      "longitude": 88.411779,
       "iconType": "zebra"
     }
   },
@@ -228,7 +228,7 @@
     "_id": 22,
     "category": "Gates",
     "description": {
-      "name": "Gate 3"
+      "name": "CAB Gate"
     },
     "link": "https://jadavpuruniversity.in/",
     "info": {
@@ -236,8 +236,8 @@
     },
     "img": "https://www.getbengal.com/uploads/story_image/ju_bengali.jpg",
     "location": {
-      "latitude": 22.498096,
-      "longitude": 88.370315,
+      "latitude": 22.561146,
+      "longitude":88.414024,
       "iconType": "zebra"
     }
   },
@@ -245,7 +245,7 @@
     "_id": 23,
     "category": "Gates",
     "description": {
-      "name": "Gate 4"
+      "name": "Girl's Hostel Gate"
     },
     "link": "https://jadavpuruniversity.in/",
     "info": {
@@ -253,8 +253,8 @@
     },
     "img": "https://images.news18.com/ibnlive/uploads/2018/07/Jadavpur-University-ranked-76th-in-Asia.jpeg",
     "location": {
-      "latitude": 22.499807,
-      "longitude": 88.369478,
+      "latitude": 22.559822,
+      "longitude": 88.413378,
       "iconType": "zebra"
     }
   },
@@ -270,8 +270,8 @@
     },
     "img": "https://images.news18.com/ibnlive/uploads/2018/07/Jadavpur-University-ranked-76th-in-Asia.jpeg",
     "location": {
-      "latitude": 22.499807,
-      "longitude": 88.369478,
+      "latitude": 22.560883,
+      "longitude": 88.41393,
       "iconType": "zebra"
     }
   },
@@ -423,8 +423,8 @@
     },
     "img": "https://jadavpuruniversity.in/storage/2023/03/entrance.jpg",
     "location": {
-      "latitude": 22.498694,
-      "longitude": 88.371454,
+      "latitude": 22.560902,
+      "longitude":88.41224,
       "iconType": "zebra"
     }
   },
@@ -440,8 +440,8 @@
     },
     "img": "https://i.pinimg.com/736x/a6/ca/20/a6ca204f116b584a7b334b53e7b522ff.jpg",
     "location": {
-      "latitude": 22.498842,
-      "longitude": 88.37257,
+      "latitude": 22.560688,
+      "longitude": 88.412852,
       "iconType": "zebra"
     }
   },
@@ -457,8 +457,8 @@
     },
     "img": "https://jadavpuruniversity.in/storage/2023/03/entrance.jpg",
     "location": {
-      "latitude": 22.498694,
-      "longitude": 88.371454,
+      "latitude":  22.560244,
+      "longitude": 88.412598,
       "iconType": "zebra"
     }
   },
@@ -474,8 +474,8 @@
     },
     "img": "https://jadavpuruniversity.in/storage/2023/03/entrance.jpg",
     "location": {
-      "latitude": 22.498694,
-      "longitude": 88.371454,
+      "latitude":  22.563354,
+      "longitude": 88.41226,
       "iconType": "zebra"
     }
   },
@@ -491,8 +491,8 @@
     },
     "img": "https://jadavpuruniversity.in/storage/2023/03/entrance.jpg",
     "location": {
-      "latitude": 22.498694,
-      "longitude": 88.371454,
+      "latitude": 22.561604,
+      "longitude": 88.412145,
       "iconType": "zebra"
     }
   },
@@ -508,8 +508,8 @@
     },
     "img": "https://jadavpuruniversity.in/storage/2023/03/entrance.jpg",
     "location": {
-      "latitude": 22.498694,
-      "longitude": 88.371454,
+      "latitude": 22.560906,
+      "longitude":88.413512,
       "iconType": "zebra"
     }
   }
