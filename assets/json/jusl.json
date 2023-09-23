@@ -1,0 +1,465 @@
+[
+    {
+        "_id": 1,
+        "category": "Departments",
+        "description": {
+            "name": "Construction",
+            "founded": "Founded : 1989",
+            "hod" : "HOD: Prof. Tapas Kumar Bhattacharyya"
+        },
+        "link":"https://jadavpuruniversity.in/academics/architecture/",
+        "info": {
+            "about":"The department focuses on practical education, emphasizing Construction Management and related subjects and is evolving into a hub for soil, material, and concrete testing, with a focus on Non-Destructive Testing, and encourages industry collaboration in Repair and Rehabilitation of Structures."
+        },
+        "img": "https://lh3.googleusercontent.com/p/AF1QipP7H19KceAtT58_rrTSh-w7_e4FUVfgqblbPI0n=s680-w680-h510",
+        "location": {
+            "latitude": 22.561407,
+            "longitude":88.41277
+        }
+    },
+    {
+        "_id": 2,
+        "category": "Departments",
+        "description": {
+            "name": "IT",
+            "founded": "Founded : 2001",
+            "hod" : "HOD: Prof. Parama Bhaumik"
+        },
+        "link":"https://jadavpuruniversity.in/academics/chemical-engineering/",
+        "info": {
+            "about":"Fusion of digital communication, network technologies and software methodologies necessitates new skills and theoretical background. Consequently, a large number of trained professionals are required to meet the growing job market in the IT sector. To cater to the needs resulted in the inception of the department of IT."
+        },
+        "img": "https://i.ytimg.com/vi/ZABMgoORREA/maxresdefault.jpg",
+        "location": {
+            "latitude": 22.561135,
+            "longitude":88.413155
+        }
+    },
+    {
+        "_id": 3,
+        "category": "Departments",
+        "description": {
+            "name": "IEE",
+            "founded": "Founded : 1956",
+            "hod" : "HOD: Dr. Partha Bhattacharya"
+        },
+        "link":"https://jadavpuruniversity.in/academics/civil-engineering/",
+        "info": {
+            "about":"The department has a strong reputation, with 5000 graduates serving globally. It offers consultancy, testing services, and prestigious research projects. Faculty members make outstanding contributions, and Ph.D. students work on sponsored projects."
+        },
+        "img": "https://lh3.googleusercontent.com/p/AF1QipP7H19KceAtT58_rrTSh-w7_e4FUVfgqblbPI0n=s680-w680-h510",
+        "location": {
+            "latitude": 22.560662,
+            "longitude": 88.412757,
+            "iconType": ""
+        }
+    },
+    {
+        "_id": 4,
+        "category": "Departments",
+        "description": {
+            "name": "Power",
+            "founded": "Founded : 1988",
+            "hod" : "HOD: Dr. Nandini Mukhopadhyay"
+        },
+        "link":"https://jadavpuruniversity.in/academics/computer-science-engineering/",
+        "info": {
+            "about":"Jadavpur University started computer education in the 1960s. A Computer Centre was established in 1968, offering a P.G. Diploma course. Later, undergraduate and postgraduate programs were introduced. The department now offers four programs with varying intake capacities."
+        },
+        "img": "https://lh3.googleusercontent.com/p/AF1QipP7H19KceAtT58_rrTSh-w7_e4FUVfgqblbPI0n=s680-w680-h510",
+        "location": {
+            "latitude": 22.560761,
+            "longitude": 88.412455,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 5,
+        "category": "Departments",
+        "description": {
+            "name": "Printing",
+            "founded": "Founded : 1906",
+            "hod" : "HOD: Dr. Biswanath Roy"
+        },
+        "link":"https://jadavpuruniversity.in/academics/electrical-engineering/",
+        "info": {
+            "about":"The department of Jadavpur has earned national repute. It offers revamped courses, research, and industry collaborations, recognized as a Center of Advanced Studies by UGC."
+        },
+        "img": "https://i0.wp.com/www.icareermaker.com/wp-content/uploads/2016/09/JUFETKolkata.jpg",
+        "location": {
+            "latitude": 22.561313,
+            "longitude": 88.412957,
+            "iconType": "zebra"
+        }
+    },
+    {
+            "_id": 12,
+            "category": "Administration",
+            "description": {
+                "name": "Aurobindo Bhavan",
+                "contact no":"+91 33 2457 2540"
+            },
+            "link":"https://jadavpuruniversity.in/",
+            "info": 
+            {"about":"The hub for admissions, marksheet issuance, and administrative matters, housing the office of the esteemed Dean, Vice-Chancellor, and Pro Vice-Chancellor."}, 
+            "img": "https://assets.telegraphindia.com/telegraph/301a2764-ab58-4d8c-927a-6c567d8a9829.jpg",
+            "location": {
+                "latitude": 22.496468,
+                "longitude": 88.372405 ,
+                "iconType": "zebra"
+            }
+    },
+    {
+        "_id": 13,
+        "category": "Administration",
+        "description": {
+            "name": "TEQUIP Building",
+            "contact no":"+91 33 2457 2227"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info": 
+        {"about":" The primary destination for all placement-related activities and screenings, serving as the go-to hub for students and employers alike."}, 
+        "img": "https://jucse2020.files.wordpress.com/2020/02/6.jpg",
+        "location": {
+            "latitude": 22.498987,
+            "longitude": 88.370256,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 14,
+        "category": "Administration",
+        "description": {
+            "name": "MR Section"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info": 
+        {"about":"The main hub for fee payments and inquiries, serving as the primary destination for handling financial matters and obtaining information regarding fees and related concerns."}, 
+        "img": "https://lh5.googleusercontent.com/p/AF1QipOPPUe3dR6GFlqkOqa-ahV12OaXyc_vLxvGaqMI=w750-h563-p-k-no",
+        "location": {
+            "latitude":  22.496868,
+            "longitude": 88.372542,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 15,
+        "category": "Administration",
+        "description": {
+            "name": "Gandhi Bhavan"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info": 
+        {"about":"The happening spot for department freshers and epic cultural activities! It's where you showcase your cultural prowess and celebrate the vibrant spirit of creativity and talent."}, 
+        "img": "https://lh5.googleusercontent.com/p/AF1QipMUgpmjbqxqnlhB2xsogZkpe9pwt6XBELV6s17J=w1080-k-no",
+        "location": {
+            "latitude": 22.499604, 
+            "longitude": 88.371014, 
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 16,
+        "category": "Canteen",
+        "description": {
+            "name": "Milan Da'r Canteen"
+        },
+        "link": "https://jadavpuruniversity.in/",
+        "info": {
+            "about":""
+        },
+        "img":"https://img.restaurantguru.com/r988-Milan-Das-Canteen-Alapan-facade.jpg",
+        "location": {
+            "latitude": 22.500904, 
+            "longitude": 88.370362,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 17,
+        "category": "Canteen",
+        "description": {
+            "name": "Suruchi Canteen"
+        },
+        "link": "https://jadavpuruniversity.in/",
+        "info": {
+            "about":""
+        },
+        "img":"https://10619-2.s.cdn12.com/rests/original/102_507777150.jpg",
+        "location": {
+            "latitude": 22.498757,
+            "longitude": 88.37245,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 18,
+        "category": "Canteen",
+        "description": {
+            "name": "Aahar Canteen"
+        },
+        "link": "https://jadavpuruniversity.in/",
+        "info": {
+            "about":""
+        },
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ahar_Canteen_-_Jadavpur_University_-_Kolkata_2015-01-08_2404.JPG/2560px-Ahar_Canteen_-_Jadavpur_University_-_Kolkata_2015-01-08_2404.JPG",
+        "location": {
+            "latitude": 22.496681,
+            "longitude": 88.372153,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 19,
+        "category": "Canteen",
+        "description": {
+            "name": "PG Canteen"
+        },
+        "link": "https://jadavpuruniversity.in/",
+        "info": {
+            "about":""
+        },"img":"https://lh3.googleusercontent.com/p/AF1QipNmi_5PX4c0V8Zpzy3nUKHT9IIkuikOFZWWdRsv=s680-w680-h510",
+        "location": {
+            "latitude":  22.502418,
+            "longitude": 88.370552,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 20,
+        "category": "Hostel",
+        "description": {
+          "name": "Boys' Hostel"
+        },
+        "link": "https://jadavpuruniversity.in/about/facilities/hostel-facilities/",
+        "info": {
+          "about": "• Capacity : 187 (No. of Rooms-58)\n • Rate : Rs.15/-(monthly rent) Rs.10/-(electricity charges)\n • Contact : (+91)9477142134"
+        },
+        "img": "https://scontent.fccu16-1.fna.fbcdn.net/v/t31.18172-8/13558594_1189978107721655_1498496607283413519_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=f8N41kWnFY4AX88sG-5&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCKnA5rppx8KehKrgO_JxkTw93IDWJjUhHMiFAtWklQ0Q&oe=64D8D214",
+        "location": {
+          "latitude": 22.501563,
+          "longitude": 88.370374
+        }
+      },
+      {
+        "_id": 21,
+        "category": "Hostel",
+        "description": {
+          "name": "Old PG Hostel"
+        },
+        "link": "https://jadavpuruniversity.in/about/facilities/hostel-facilities/",
+        "info": {
+          "about": "• Capacity : 92(No. of Rooms-51)\n • Rate : Rs.15/-(monthly rent) Rs.10/-(electricity charges)\n • Contact : (033)2457-2597"
+        },
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47NQ_BhC04IBOcJPyoACfTRJy9ejKL_-ysQ&usqp=CAU",
+        "location": {
+          "latitude": 22.502531,
+          "longitude": 88.370175
+        }
+      },
+      {
+        "_id": 22,
+        "category": "Hostel",
+        "description": {
+          "name": "Research Scholar Hostel"
+        },
+        "link": "https://jadavpuruniversity.in/about/facilities/hostel-facilities/",
+        "info": {
+          "about": "• Capacity : 80\n • Rate : Rs.300/-(monthly rent)\n • Contact : (033)2457-2594"
+        },
+        "img": "https://content.jdmagicbox.com/comp/kolkata/z8/033pxx33.xx33.200627134112.b4z8/catalogue/new-pg-cum-research-scholar-hostel-jadavpur-kolkata-dormitory-services-mmfr48xtpj-250.jpg",
+        "location": {
+          "latitude": 22.502427,
+          "longitude": 88.370803
+        }
+      },
+      {
+        "_id": 23,
+        "category": "Hostel",
+        "description": {
+          "name": "Women's Hostel"
+        },
+        "link": "https://jadavpuruniversity.in/about/facilities/hostel-facilities/",
+        "info": {
+          "about": "• Capacity : 240(No. of Rooms- 80)\n • Rate : Rs.15/-(monthly rent) Rs.10/-(electricity charges)\n • Contact : (033)2457-2511"
+        },
+        "img": "https://jadavpuruniversity.in/storage/2022/03/Womens-Hostel-scaled.jpg",
+        "location": {
+          "latitude": 22.499875,
+          "longitude": 88.372474
+        }
+      },
+    {
+        "_id": 24,
+        "category": "Misc",
+        "description": {
+            "name": "Central Library"
+        },
+        "link":"https://jadavpuruniversity.in/about/facilities/library/",
+        "info":{
+            "about":"Started in 1955, Jadavpur University Library serves the academic and research needs of faculty, students, and staff. It has grown to become one of the best-equipped libraries in the country."
+        },
+        "img":"https://lh5.googleusercontent.com/p/AF1QipMXqwsEfmSfsxSsQ9I7_yptNyrsZ8LGEYc1RbB0=w1080-k-no",
+        "location": {
+            "latitude": 22.498694,
+            "longitude": 88.371454 ,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 25,
+        "category": "Misc",
+        "description": {
+            "name": "Green Zone"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"It is the ultimate spot to hang out, have adda, and chillax! It's the perfect area to jam, relax, and have a blast with your buddies. It's where all the fun happens!"
+        },
+        "img":"https://lh3.googleusercontent.com/p/AF1QipNtyMYRY2keICy17cHRF-BQxwddP9F6Hha2g1i-=s680-w680-h510",
+        "location": {
+            "latitude": 22.498635,
+            "longitude": 88.370687,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 26,
+        "category": "Misc",
+        "description": {
+            "name": "OAT"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"The happening spot where all the convocation ceremonies and epic fests go down! It's like a party arena where memories are made, performances rock the stage, and good vibes fill the air. Let's get ready to groove and celebrate in style!"
+        },
+        "img":"https://www.dsarchitects.in/images/project_details/small/ju_oat.jpg",
+        "location": {
+            "latitude": 22.501995,
+            "longitude": 88.371007,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 27,
+        "category": "Misc",
+        "description": {
+            "name": "Jheel Par"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"The ultimate romantic hotspot for lovebirds and a chill-out zone for everyone. Unwind, relax, and soak in the good vibes. Embrace serenity and create cherished memories!"
+        },
+        "img":"https://i.pinimg.com/736x/a6/ca/20/a6ca204f116b584a7b334b53e7b522ff.jpg",
+        "location": {
+            "latitude":  22.498842,
+            "longitude": 88.37257,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 28,
+        "category": "Misc",
+        "description": {
+            "name": "World View"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"The fiery crucible where the spirit of freedom ignites. A breeding ground for liberal ideals and righteous actions. With rallying slogans and songs of freedom, it echoes the spirit of revolution. Embrace the fervor, ignite change!"
+        },
+        "img":"https://pbs.twimg.com/media/FWhvV2uacAATc_S.jpg",
+        "location": {
+            "latitude": 22.500841,
+            "longitude": 88.370039,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 29,
+        "category": "Misc",
+        "description": {
+            "name": "Playground"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"It is where all the sports action goes down! It's the hotspot for epic matches and athletic adventures. And guess what? It's not just for sports, but also for conducting GBs and discussing important agendas."
+        },
+        "img":"https://lh4.googleusercontent.com/-E1jMKOjqbX0/WLQz0vJLJHI/AAAAAAAAIoI/YyrYJ-OjgkYN3GHr5Xoy3fJmoj95Z43PgCLIB/photo.jpg",
+        "location": {
+            "latitude": 22.49749,
+            "longitude": 88.372219,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 30,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 1"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"This is the closest gate to the Jadavpur Railway Station. Aurobindo Bhavan and MR Section is to the nearest proximity from this gate."
+        },
+        "img":"https://pbs.twimg.com/media/E-rXUDWVcAgdjRA?format=jpg&name=4096x4096",
+        "location": {
+            "latitude": 22.496084,
+            "longitude": 88.372511,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 31,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 2"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"This gate is in close proximity to Prayukti Bhavan, Shakti Bhavan, Radio JU and CAD Centre."
+        },
+        "img":"https://pbs.twimg.com/media/E-rXUDWVcAgdjRA?format=jpg&name=4096x4096",
+        "location": {
+            "latitude": 22.495833,
+            "longitude": 88.370895,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 32,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 3"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"This gate is in close proximity to IIChE, K.P. Basu Memorial Hall, Gandhi Bhavan, TEQUIP and Central Library."
+        },
+        "img":"https://www.getbengal.com/uploads/story_image/ju_bengali.jpg",
+        "location": {
+            "latitude": 22.498096,
+            "longitude": 88.370315,
+            "iconType": "zebra"
+        }
+    },
+    {
+        "_id": 33,
+        "category": "Misc",
+        "description": {
+            "name": "Gate 4"
+        },
+        "link":"https://jadavpuruniversity.in/",
+        "info":{
+            "about":"This gate is in close proximity to the Arts and Science Faculty."
+        },
+        "img":"https://images.news18.com/ibnlive/uploads/2018/07/Jadavpur-University-ranked-76th-in-Asia.jpeg",
+        "location": {
+            "latitude": 22.499807,
+            "longitude": 88.369478,
+            "iconType": "zebra"
+        }
+    }
+]
+
+
+
