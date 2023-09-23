@@ -103,8 +103,8 @@
       },
       "img": "https://assets.telegraphindia.com/telegraph/301a2764-ab58-4d8c-927a-6c567d8a9829.jpg",
       "location": {
-        "latitude": 22.496468,
-        "longitude": 88.372405,
+        "latitude": 22.5608,
+        "longitude":88.413441,
         "iconType": "zebra"
       }
     },
@@ -120,8 +120,8 @@
       },
       "img": "https://jucse2020.files.wordpress.com/2020/02/6.jpg",
       "location": {
-        "latitude": 22.498987,
-        "longitude": 88.370256,
+        "latitude": 22.5608,
+        "longitude": 88.413441,
         "iconType": "zebra"
       }
     },
@@ -137,8 +137,8 @@
       },
       "img": "https://lh5.googleusercontent.com/p/AF1QipOPPUe3dR6GFlqkOqa-ahV12OaXyc_vLxvGaqMI=w750-h563-p-k-no",
       "location": {
-        "latitude": 22.496868,
-        "longitude": 88.372542,
+        "latitude": 22.5608,
+        "longitude": 88.413441,
         "iconType": "zebra"
       }
     },
@@ -152,8 +152,8 @@
       },
       "img": "https://img.restaurantguru.com/r988-Milan-Das-Canteen-Alapan-facade.jpg",
       "location": {
-        "latitude": 22.500904,
-        "longitude": 88.370362,
+        "latitude": 22.560684,
+        "longitude": 88.413062,
         "iconType": "zebra"
       },
       "_id": 9,
@@ -171,8 +171,8 @@
       },
       "img": "https://10619-2.s.cdn12.com/rests/original/102_507777150.jpg",
       "location": {
-        "latitude": 22.498757,
-        "longitude": 88.37245,
+        "latitude": 22.561276,
+        "longitude": 88.412619,
         "iconType": "zebra"
       }
     },
@@ -188,8 +188,8 @@
       },
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ahar_Canteen_-_Jadavpur_University_-_Kolkata_2015-01-08_2404.JPG/2560px-Ahar_Canteen_-_Jadavpur_University_-_Kolkata_2015-01-08_2404.JPG",
       "location": {
-        "latitude": 22.496681,
-        "longitude": 88.372153,
+        "latitude": 22.560393,
+        "longitude": 88.413805,
         "iconType": "zebra"
       }
     },
@@ -205,8 +205,8 @@
       },
       "img": "https://lh3.googleusercontent.com/p/AF1QipNmi_5PX4c0V8Zpzy3nUKHT9IIkuikOFZWWdRsv=s680-w680-h510",
       "location": {
-        "latitude": 22.502418,
-        "longitude": 88.370552,
+        "latitude": 22.562824,
+        "longitude": 88.412702,
         "iconType": "zebra"
       }
     },
@@ -222,8 +222,8 @@
       },
       "img": "https://scontent.fccu16-1.fna.fbcdn.net/v/t31.18172-8/13558594_1189978107721655_1498496607283413519_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=f8N41kWnFY4AX88sG-5&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCKnA5rppx8KehKrgO_JxkTw93IDWJjUhHMiFAtWklQ0Q&oe=64D8D214",
       "location": {
-        "latitude": 22.501563,
-        "longitude": 88.370374
+        "latitude": 22.562888,
+        "longitude": 88.412246
       }
     },
     {
@@ -238,8 +238,8 @@
       },
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47NQ_BhC04IBOcJPyoACfTRJy9ejKL_-ysQ&usqp=CAU",
       "location": {
-        "latitude": 22.502531,
-        "longitude": 88.370175
+        "latitude": 22.559965,
+        "longitude":88.413117
       }
     },
     {
@@ -279,8 +279,8 @@
       },
       "img": "",
       "location": {
-        "latitude": 22.498635,
-        "longitude": 88.370687,
+        "latitude": 22.562277,
+        "longitude": 88.413539,
         "iconType": "zebra"
       }
     },
@@ -296,8 +296,8 @@
       },
       "img": "https://www.dsarchitects.in/images/project_details/small/ju_oat.jpg",
       "location": {
-        "latitude": 22.501995,
-        "longitude": 88.371007,
+        "latitude": 22.562538,
+        "longitude": 88.413062,
         "iconType": "zebra"
       }
     },
@@ -330,8 +330,8 @@
       },
       "img": "https://pbs.twimg.com/media/FWhvV2uacAATc_S.jpg",
       "location": {
-        "latitude": 22.500841,
-        "longitude": 88.370039,
+        "latitude": 22.562924,
+        "longitude": 88.412121,
         "iconType": "zebra"
       }
     },
@@ -347,8 +347,8 @@
       },
       "img": "https://lh4.googleusercontent.com/-E1jMKOjqbX0/WLQz0vJLJHI/AAAAAAAAIoI/YyrYJ-OjgkYN3GHr5Xoy3fJmoj95Z43PgCLIB/photo.jpg",
       "location": {
-        "latitude": 22.49749,
-        "longitude": 88.372219,
+        "latitude": 22.562373,
+        "longitude": 88.412422,
         "iconType": "zebra"
       }
     },
