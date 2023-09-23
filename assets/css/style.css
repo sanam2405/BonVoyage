@@ -128,8 +128,9 @@ button {
 }
 
 .letsGo:hover {
-  border-color: green;
-  box-shadow: 0 0 0.625rem green;
+  border-color: black;
+  color: black;
+  background-color: #AFE1AF;
 }
 
 /* Sign Up and Sign In button styles */
