@@ -50,8 +50,7 @@
         "img": "https://lh3.googleusercontent.com/p/AF1QipP7H19KceAtT58_rrTSh-w7_e4FUVfgqblbPI0n=s680-w680-h510",
         "location": {
             "latitude": 22.49669,
-            "longitude": 88.371313,
-            "iconType": ""
+            "longitude": 88.371313
         }
     },
     {
@@ -69,8 +68,7 @@
         "img": "https://lh3.googleusercontent.com/p/AF1QipP7H19KceAtT58_rrTSh-w7_e4FUVfgqblbPI0n=s680-w680-h510",
         "location": {
             "latitude": 22.497015,
-            "longitude": 88.371083,
-            "iconType": "zebra"
+            "longitude": 88.371083
         }
     },
     {
@@ -88,8 +86,7 @@
         "img": "https://i0.wp.com/www.icareermaker.com/wp-content/uploads/2016/09/JUFETKolkata.jpg",
         "location": {
             "latitude": 22.496368,
-            "longitude": 88.371611,
-            "iconType": "zebra"
+            "longitude": 88.371611
         }
     },
     {
@@ -107,8 +104,7 @@
         "img": "https://lh3.googleusercontent.com/p/AF1QipP7H19KceAtT58_rrTSh-w7_e4FUVfgqblbPI0n=s680-w680-h510",
         "location": {
             "latitude":  22.496418,
-            "longitude": 88.370918,
-            "iconType": "zebra"
+            "longitude": 88.370918
         }
     },
     {
@@ -126,8 +122,7 @@
         "img": "https://scontent.fccu13-3.fna.fbcdn.net/v/t39.30808-6/249321826_3046271682315530_1955932388282640800_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NQgWQbXEFoEAX_DGcKe&_nc_ht=scontent.fccu13-3.fna&oh=00_AfDYjk74jBJlRAPFTMoOZVksOyehQS9476JPw8jCWgQE5A&oe=64B7812E",
         "location": {
             "latitude": 22.497147,
-            "longitude": 88.373467,
-            "iconType": "zebra"
+            "longitude": 88.373467
         }
     },
     {
@@ -145,8 +140,7 @@
         "img": "https://lh3.googleusercontent.com/p/AF1QipO7-h1Z8YOCfl5i2aoLegDid-_vGdDztlAfBDUO=w1024-k",
         "location": {
             "latitude": 22.497762, 
-            "longitude": 88.372986,
-            "iconType": "zebra"
+            "longitude": 88.372986
         }
     },
     {
@@ -164,8 +158,7 @@
         "img": "https://i.ytimg.com/vi/z7GbdAkPkh0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLARrIipsaH_LGvvYibHgkHp3BCaSg",
         "location": {
             "latitude": 22.499876,
-            "longitude" : 88.371499,
-            "iconType" : "zebra"
+            "longitude" : 88.371499
         }
     },
     {
@@ -183,8 +176,7 @@
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymcvT8xI5jPYFkbTruopA0T4QHayjNt6yvBh5idXxCr15x7pKnqBlOmGu6ur2sVYABL4&usqp=CAU",
         "location": {
             "latitude": 22.501249, 
-            "longitude": 88.370459,
-            "iconType": "zebra"
+            "longitude": 88.370459
         }
     },
     {
@@ -202,8 +194,7 @@
         "img": "https://scontent.fccu13-4.fna.fbcdn.net/v/t39.30808-6/326477311_573507247657907_5518146878606541994_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=iZJTBKRF5qAAX8Z15NH&_nc_ht=scontent.fccu13-4.fna&oh=00_AfBg_z5vaCRyqX7vMtcNAmcKhyVfpzP0NKEUpbTzBGhl-Q&oe=64B77026",
         "location": {
             "latitude": 22.497464,
-            "longitude": 88.37109, 
-            "iconType": "zebra"
+            "longitude": 88.37109
         }
     },
     {
@@ -219,8 +210,7 @@
             "img": "https://assets.telegraphindia.com/telegraph/301a2764-ab58-4d8c-927a-6c567d8a9829.jpg",
             "location": {
                 "latitude": 22.496468,
-                "longitude": 88.372405 ,
-                "iconType": "zebra"
+                "longitude": 88.372405
             }
     },
     {
@@ -236,8 +226,7 @@
         "img": "https://jucse2020.files.wordpress.com/2020/02/6.jpg",
         "location": {
             "latitude": 22.498987,
-            "longitude": 88.370256,
-            "iconType": "zebra"
+            "longitude": 88.370256
         }
     },
     {
@@ -252,8 +241,7 @@
         "img": "https://lh5.googleusercontent.com/p/AF1QipOPPUe3dR6GFlqkOqa-ahV12OaXyc_vLxvGaqMI=w750-h563-p-k-no",
         "location": {
             "latitude":  22.496868,
-            "longitude": 88.372542,
-            "iconType": "zebra"
+            "longitude": 88.372542
         }
     },
     {
@@ -268,8 +256,7 @@
         "img": "https://lh5.googleusercontent.com/p/AF1QipMUgpmjbqxqnlhB2xsogZkpe9pwt6XBELV6s17J=w1080-k-no",
         "location": {
             "latitude": 22.499604, 
-            "longitude": 88.371014, 
-            "iconType": "zebra"
+            "longitude": 88.371014
         }
     },
     {
@@ -285,8 +272,7 @@
         "img":"https://img.restaurantguru.com/r988-Milan-Das-Canteen-Alapan-facade.jpg",
         "location": {
             "latitude": 22.500904, 
-            "longitude": 88.370362,
-            "iconType": "zebra"
+            "longitude": 88.370362
         }
     },
     {
@@ -302,8 +288,7 @@
         "img":"https://10619-2.s.cdn12.com/rests/original/102_507777150.jpg",
         "location": {
             "latitude": 22.498757,
-            "longitude": 88.37245,
-            "iconType": "zebra"
+            "longitude": 88.37245
         }
     },
     {
@@ -319,8 +304,7 @@
         "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ahar_Canteen_-_Jadavpur_University_-_Kolkata_2015-01-08_2404.JPG/2560px-Ahar_Canteen_-_Jadavpur_University_-_Kolkata_2015-01-08_2404.JPG",
         "location": {
             "latitude": 22.496681,
-            "longitude": 88.372153,
-            "iconType": "zebra"
+            "longitude": 88.372153
         }
     },
     {
@@ -335,8 +319,7 @@
         },"img":"https://lh3.googleusercontent.com/p/AF1QipNmi_5PX4c0V8Zpzy3nUKHT9IIkuikOFZWWdRsv=s680-w680-h510",
         "location": {
             "latitude":  22.502418,
-            "longitude": 88.370552,
-            "iconType": "zebra"
+            "longitude": 88.370552
         }
     },
     {
@@ -416,8 +399,7 @@
         "img":"https://lh5.googleusercontent.com/p/AF1QipMXqwsEfmSfsxSsQ9I7_yptNyrsZ8LGEYc1RbB0=w1080-k-no",
         "location": {
             "latitude": 22.498694,
-            "longitude": 88.371454 ,
-            "iconType": "zebra"
+            "longitude": 88.371454
         }
     },
     {
@@ -450,8 +432,7 @@
         "img":"https://www.dsarchitects.in/images/project_details/small/ju_oat.jpg",
         "location": {
             "latitude": 22.501995,
-            "longitude": 88.371007,
-            "iconType": "zebra"
+            "longitude": 88.371007
         }
     },
     {
@@ -467,8 +448,7 @@
         "img":"https://i.pinimg.com/736x/a6/ca/20/a6ca204f116b584a7b334b53e7b522ff.jpg",
         "location": {
             "latitude":  22.498842,
-            "longitude": 88.37257,
-            "iconType": "zebra"
+            "longitude": 88.37257
         }
     },
     {
@@ -484,8 +464,7 @@
         "img":"https://pbs.twimg.com/media/FWhvV2uacAATc_S.jpg",
         "location": {
             "latitude": 22.500841,
-            "longitude": 88.370039,
-            "iconType": "zebra"
+            "longitude": 88.370039
         }
     },
     {
@@ -501,8 +480,7 @@
         "img":"https://lh4.googleusercontent.com/-E1jMKOjqbX0/WLQz0vJLJHI/AAAAAAAAIoI/YyrYJ-OjgkYN3GHr5Xoy3fJmoj95Z43PgCLIB/photo.jpg",
         "location": {
             "latitude": 22.49749,
-            "longitude": 88.372219,
-            "iconType": "zebra"
+            "longitude": 88.372219
         }
     },
     {
@@ -518,8 +496,7 @@
         "img":"https://pbs.twimg.com/media/E-rXUDWVcAgdjRA?format=jpg&name=4096x4096",
         "location": {
             "latitude": 22.496084,
-            "longitude": 88.372511,
-            "iconType": "zebra"
+            "longitude": 88.372511
         }
     },
     {
@@ -535,8 +512,7 @@
         "img":"https://pbs.twimg.com/media/E-rXUDWVcAgdjRA?format=jpg&name=4096x4096",
         "location": {
             "latitude": 22.495833,
-            "longitude": 88.370895,
-            "iconType": "zebra"
+            "longitude": 88.370895
         }
     },
     {
@@ -552,8 +528,7 @@
         "img":"https://www.getbengal.com/uploads/story_image/ju_bengali.jpg",
         "location": {
             "latitude": 22.498096,
-            "longitude": 88.370315,
-            "iconType": "zebra"
+            "longitude": 88.370315
         }
     },
     {
@@ -569,8 +544,7 @@
         "img":"https://images.news18.com/ibnlive/uploads/2018/07/Jadavpur-University-ranked-76th-in-Asia.jpeg",
         "location": {
             "latitude": 22.499807,
-            "longitude": 88.369478,
-            "iconType": "zebra"
+            "longitude": 88.369478
         }
     }
 ]
